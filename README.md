@@ -44,3 +44,4 @@ You should be able to access the application in [http://localhost:3000](http://l
  - Beatriz Arbizu Ramírez
  - Alberto Freije Carballo
  - Samuel Rodríguez Ares
+ - Xurde García Fernández
