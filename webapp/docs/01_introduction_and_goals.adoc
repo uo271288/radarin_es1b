@@ -10,9 +10,13 @@ Describes the relevant requirements and the driving forces that software archite
 * relevant stakeholders and their expectations
 ****
 
-Hola
+Radarin consiste en una aplicación descentralizada que toma como objetivo facilitar encuentros entre amigos. Para ello, se hace uso de la ubicación de los usuarios que la habiliten de forma voluntaria, de forma que cada usuario pueda conocer, de forma aproximada, en qué ubicación se encuentran los usuarios de su lista de amigos.
 
-=== Requirements Overview
+Además, Radarin es capaz de notificar al usuario cada vez que alguno de sus amigos se encuentre en una ubicación relativamente cercana a la suya.
+
+La aplicación busca respetar, en la medida de lo posible, la privacidad de los usuarios. Para ello, se solicitará el permiso expreso del usuario en cada momento y solamente se guardará la información imprescindible para los encuentros, dejando a un lado cualquier otro tipo de información de carácter personal.
+
+=== Vista general de los requisitos
 
 [role="arc42help"]
 ****
@@ -31,6 +35,19 @@ If requirements documents exist this overview should refer to these documents.
 
 Keep these excerpts as short as possible. Balance readability of this document with potential redundancy w.r.t to requirements documents.
 ****
+
+==== Requisitos Funcionales
+
+- El usuario debe poder acceder a la aplicación tanto desde su navegador como desde su teléfono móvil a través de la app.
+- Cada usuario debe ser capaz de ver su lista de amigos y la ubicación más reciente de cada uno de ellos.
+- Se debe priorizar la seguridad y privacidad de cada usuario almacenando la información de cada uno en sus respectivos pods.
+- El usuario debe ser capaz de recibir notificaciones cuando otros usuarios conocidos estén cerca de su ubicación.
+
+==== Requisitos No Funcionales
+
+- El sistema debe ser desplegado en contenedores y servicios en la nube.
+- La versión móvil también debe incluir un sistema de monitorización.
+- La aplicación debe ser adaptable, accesible y cumplir los estándares del W3C.
 
 === Quality Goals
 
