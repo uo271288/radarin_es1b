@@ -89,6 +89,8 @@ Table with role names, person names, and their expectations with respect to the 
 [options="header",cols="1,2,2"]
 |===
 |Role/Name|Contact|Expectations
-| _Cliente_ | _Representante del cliente que desea desarrollar la apliación_ | EL seguiniemto del desarrolo de la aplicación para que esta se ajuste lo máximo posible a sus expectativas. Tambien nos da las directrices que desea que se gestionen en la aplicación 
-| Supervisores| _<Contact-2>_ | _<Expectation-2>_
+| _Cliente_ | _Representante del cliente que desea desarrollar la apliación_ | _Seguiniemto del desarrolo de la aplicación para que esta se ajuste lo máximo posible a sus expectativas. Tambien nos da las directrices que desea que se gestionen en la aplicación_ 
+| _Supervisores_ | _Equipo de profesionales que se encargan e supervisar el trabajo a desarrollar_ | _Supervisar el trabajo realizado por los desarrolladores e ir confirmando de que las pautas empleadas son aquellas que desea el cliente y si es necesario dar asesoramiento_
+| _Desarroladores_ | _Equipo de personas que se dedican a progamar la aplicación_ | _ Llegar a desarrollar la aplicación en su totalidad segun los deseas del cliente
+| _Usuario final_ | _Aquella persoan o conjunto de personas que van a emplear la applicación_ | _ Una aplicación completa que genere ningún problema a la hora de su empleo y que además sea facil de usar_ 
 |===
