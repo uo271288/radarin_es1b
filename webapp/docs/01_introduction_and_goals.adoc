@@ -86,12 +86,13 @@ These stakeholders determine the extent and the level of detail of your work and
 Table with role names, person names, and their expectations with respect to the architecture and its documentation.
 ****
 A continuación se expone en la tabla 2 las distintas partes interesadas en la aplicación
+
 _Tabla 2:Stakeholders_ 
 [options="header",cols="1,2,2"]
 |===
-|Role/Name|Contact|Expectations
-| _Cliente_ | _Representante del cliente que desea desarrollar la apliación_ | _Seguiniemto del desarrolo de la aplicación para que esta se ajuste lo máximo posible a sus expectativas. Tambien nos da las directrices que desea que se gestionen en la aplicación_ 
-| _Supervisores_ | _Equipo de profesionales que se encargan e supervisar el trabajo a desarrollar_ | _Supervisar el trabajo realizado por los desarrolladores e ir confirmando de que las pautas empleadas son aquellas que desea el cliente y si es necesario dar asesoramiento_
-| _Desarroladores_ | _Equipo de personas que se dedican a progamar la aplicación_ | _Llegar a desarrollar la aplicación en su totalidad segun los deseas del cliente_
-| _Usuario final_ | _Aquella persoan o conjunto de personas que van a emplear la applicación_ | _Una aplicación completa que genere ningún problema a la hora de su empleo y que además sea facil de usar_ 
+|Rol|Descripción|Expectativas
+| _Cliente_ | _Persona u organización que encarga o solicita el desarrollo de la aplicación._ | _Entrega de requisitos a los desarrolladores sobre qué debe hacer la aplicación; seguimiento del desarrollo de la aplicación con el fin de verificar que esta se ajuste lo máximo posible a dichos requisitos._
+| _Equipo de Supervisión_ | _Conjunto de profesionales que supervisan el trabajo realizado por el Equipo de Desarrollo._ | _Supervisión del trabajo realizado por los desarrolladores; verificación de que los requisitos trabajados coincidan con aquellos establecidos por el cliente y realización de labores de asesoramiento en caso de resultar oportuno._
+| _Equipo de Desarrollo_ | _Conjunto de personas dedicadas a construir y programar la aplicación y su arquitectura._ | _Desarrollo de la aplicación en su totalidad, ajustada en la medida de lo posible a los requisitos del cliente._
+| _Usuario Final_ | _Conjunto de personas que van a utilizar la aplicación construida._ | _Capacidad de utilizar e interactuar con la aplicación de forma intuitiva y sin dificultades._
 |===
