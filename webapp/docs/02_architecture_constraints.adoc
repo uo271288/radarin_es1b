@@ -17,3 +17,30 @@ If needed you can subdivide them into
 technical constraints, organizational and political constraints and
 conventions (e.g. programming or versioning guidelines, documentation or naming conventions)
 ****
+
+=== Restricciones técnicas
+[options="header", width="100%"]
+|===
+|Restricción|Explicación
+|Uso de React|Biblioteca de JS que nos ayuda a crear las interfaces de usuario
+|Solid|Se seguirán las especificaciones SOLID durante el desarrollo del proyecto
+|Docker|Se utilizará la herramienta docker para la descentralizacion de los datos
+|Leaflet|Biblioteca de JS con mapas interactivos
+|===
+
+=== Restricciones organizativas
+[options="header", width="100%"]
+|===
+|Restricción|Explicación
+|Fecha de entrega|El proyecto se entregará antes del fin del curso
+|Organización|El equipo se compone de 7 personas
+|Reuniones|Durante las clases de prácticas el equipo se reunirá para ver que objetivos semanales se han cumplido, se harán más reuniones durante la semana si fuera necesario
+|===
+
+=== Convenciones
+[options="header", width="100%"]
+|===
+|Restricción|Explicación
+|Documentación|La documentación se escribirá en su totalidad con arc42
+|Git|Para facilitar el control de versiones usaremos GitHub
+|===
