@@ -67,7 +67,7 @@ A table with quality goals and concrete scenarios, ordered by priorities
 _Tabla 1: Objetivos de Calidad_ 
 [options="header",cols="1,1"]
 |===
-|Objetivo|Detalles|
+|Objetivo|Detalles
 | _Privacidad_ | _El usuario final será el único capaz de acceder a sus datos, que serán almacenados en su respectiva unidad privada de datos personales (POD)._
 | _Usabilidad_ | _Utilizar la aplicación debería resultar en un proceso sencillo e intuitivo para el usuario final._
 | _Rendimiento_ | _La aplicación debe responder a la interacción del usuario empleando el menor tiempo posible._
