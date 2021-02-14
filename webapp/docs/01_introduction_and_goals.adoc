@@ -89,6 +89,6 @@ Table with role names, person names, and their expectations with respect to the 
 [options="header",cols="1,2,2"]
 |===
 |Role/Name|Contact|Expectations
-| _<Role-1>_ | _<Contact-1>_ | _<Expectation-1>_
-| _<Role-2>_ | _<Contact-2>_ | _<Expectation-2>_
+|Cliente | Representante del cliente que desea desarrollar la apliación | EL seguiniemto del desarrolo de la aplicación para que esta se ajuste lo máximo posible a sus expectativas. Tambien nos da las directrices que desea que se gestionen en la aplicación 
+| Supervisores| _<Contact-2>_ | _<Expectation-2>_
 |===
