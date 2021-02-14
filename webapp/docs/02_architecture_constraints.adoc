@@ -19,7 +19,7 @@ conventions (e.g. programming or versioning guidelines, documentation or naming 
 ****
 
 === 2.1 Restricciones técnicas
-[options="header", cols="1,2"]
+[options="header", cols="1,4"]
 |===
 |Restricción|Explicación
 |Uso de React|Biblioteca de JS que nos ayuda a crear las interfaces de usuario
@@ -29,7 +29,7 @@ conventions (e.g. programming or versioning guidelines, documentation or naming 
 |===
 
 === 2.2 Restricciones organizativas
-[options="header", cols="1,2"]
+[options="header", cols="1,3"]
 |===
 |Restricción|Explicación
 |Fecha de entrega|El proyecto se entregará antes del fin del curso
@@ -40,6 +40,7 @@ conventions (e.g. programming or versioning guidelines, documentation or naming 
 === 2.3 Convenciones
 [options="header", cols="1,2"]
 |===
+|Restricción|Explicación
 |Documentación|La documentación se escribirá en su totalidad con arc42
 |Git|Para facilitar el control de versiones usaremos GitHub
 |===
