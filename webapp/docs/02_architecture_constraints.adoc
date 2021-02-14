@@ -18,7 +18,7 @@ technical constraints, organizational and political constraints and
 conventions (e.g. programming or versioning guidelines, documentation or naming conventions)
 ****
 
-=== 2.1 Restricciones técnicas
+=== Restricciones técnicas
 [options="header", width="100%"]
 |===
 |Restricción|Explicación
@@ -28,7 +28,7 @@ conventions (e.g. programming or versioning guidelines, documentation or naming 
 |Leaflet|Biblioteca de JS con mapas interactivos
 |===
 
-=== 2.2 Restricciones organizativas
+=== Restricciones organizativas
 [options="header", width="100%"]
 |===
 |Restricción|Explicación
@@ -37,7 +37,7 @@ conventions (e.g. programming or versioning guidelines, documentation or naming 
 |Reuniones|Durante las clases de prácticas el equipo se reunirá para ver que objetivos semanales se han cumplido, se harán más reuniones durante la semana si fuera necesario
 |===
 
-=== 2.3 Convenciones
+=== Convenciones
 [options="header", width="100%"]
 |===
 |Restricción|Explicación
