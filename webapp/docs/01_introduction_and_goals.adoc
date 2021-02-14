@@ -85,7 +85,8 @@ These stakeholders determine the extent and the level of detail of your work and
 .Form
 Table with role names, person names, and their expectations with respect to the architecture and its documentation.
 ****
-
+A continiación se expone en la tabla 2 las distintas partes interesadas en la aplicación
+_Tabla 2:Stakeholders_ 
 [options="header",cols="1,2,2"]
 |===
 |Role/Name|Contact|Expectations
