@@ -29,22 +29,21 @@ The title of the table is the name of your system, the three columns contain the
 
 === Technical Context
 
-[role="arc42help"]
-****
-.Contents
-Technical interfaces (channels and transmission media) linking your system to its environment. In addition a mapping of domain specific input/output to the channels, i.e. an explanation with I/O uses which channel.
+Radarin es un sistema descentralizado basado en la arquitectura SOLID , esta arquitectura fue creada por el padre de la web Tim Berners-Lee. 
+Un sistema descentralizado es aquel donde el usuario posee sus propios datos y no son las empresas quienes comercian con estos. 
+Cada usuario tendrá un SOLID POD vinculado a su cuenta. Este POD será la unidad principal de almacenamiento donde el usuario almacenara todos sus datos, de esta forma el usuario podrá decidir con quien comparte esa información , que datos son públicos y cuales privados y negar el acceso a sus datos a quien sea y cuando quiera.  
+En Radarin empleamos esta tecnología con el fin de proteger a nuestros usuarios. Cuando el usuario conecte su móvil a internet y emplee la aplicación su localización quedara registrada en el POD donde podrá decidir si compartirla o no con sus amistades.
+La aplicación web será escrita en JavaScript utilizando React , una biblioteca que facilitara la configuración de una interfaz de usuario. 
+La  aplicación se espera que funcione en todo tipo de dispositivos , tanto a nivel web , como en dispositivos móviles.
 
-.Motivation
-Many stakeholders make architectural decision based on the technical interfaces between the system and its context. Especially infrastructure or hardware designers decide these technical interfaces.
+ Interfaces Técnicas:
 
-.Form
-E.g. UML deployment diagram describing channels to neighboring systems,
-together with a mapping table showing the relationships between channels and input/output.
+[options="header",cols="1,2"]
+|===
+|Interfaces Técnicas|Descripcion
+|Solid|Se trata de la base del proyecto, donde los datos de los usuarios se encuentran descentralizados y portegidos almacenandolos en PODS.
+|Javascript|Es el lenguaje de programación empleado para desarrollar la aplicación.
+|React|biblioteca de JavaScript de codigo abierto empleada para construir interfaces gráficas. 
+|Leaflet|una biblioteca JavaScript de código abierto para mapas interactivos compatibles con dispositivos móviles.
+|===
 
-****
-
-**<Diagram or Table>**
-
-**<optionally: Explanation of technical interfaces>**
-
-**<Mapping Input/Output to Channels>**
