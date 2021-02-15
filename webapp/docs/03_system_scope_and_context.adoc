@@ -36,7 +36,7 @@ En Radarin empleamos esta tecnología con el fin de proteger a nuestros usuarios
 La aplicación web será escrita en JavaScript utilizando React , una biblioteca que facilitara la configuración de una interfaz de usuario. 
 La  aplicación se espera que funcione en todo tipo de dispositivos , tanto a nivel web , como en dispositivos móviles.
 
- Interfaces Técnicas:
+* Interfaces Técnicas:
 
 [options="header",cols="1,2"]
 |===
