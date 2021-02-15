@@ -19,13 +19,13 @@ image:"3-1-Diagram.PNG"["Example Diagram"]
 
 .Radarin
 |=========================================================
-| Communication partner |Inputs |Outputs
+| Agente |Entrada |Salida
 
-| User
+| Usuario
 | Especifica qué usuarios se definen como su "amigo". Recibe la ubicación de todos ellos.
 | Proporciona su ubicación. 
 
-| Pod
+| POD
 | Registra los "amigos" del usuario.
 | Permite comprobar el listado de "amigos"
 
@@ -33,7 +33,7 @@ image:"3-1-Diagram.PNG"["Example Diagram"]
 | Localizaciones y definición de relaciones entre usarios (qué usuarios son amigos) 
 | Ubicaciones de los usuairos.
 
-| User's contact
+| Communicacion con el usuario
 | 
 | Notifica cuando un contacto está cerca.
 
