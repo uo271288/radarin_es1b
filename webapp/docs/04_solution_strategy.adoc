@@ -10,9 +10,7 @@ A short summary and explanation of the fundamental decisions and solution strate
 * decisions about the top-level decomposition of the system, e.g. usage of an architectural pattern or design pattern
 * decisions on how to achieve key quality goals
 * relevant organizational decisions, e.g. selecting a development process or delegating certain tasks to third parties.
-****
 
-****
 .Motivation
 These decisions form the cornerstones for your architecture. They are the basis for many other detailed decisions or implementation rules.
 
@@ -32,6 +30,7 @@ Para desarrollar este proyecto hemos decidio usar React Native que, además de f
 === Decisiones tecnológicas
 ==== Librerías
 Las principales librerías a usar son las siguientes:
+
 * React: Biblioteca de Javascript usada para crear el front-end de la aplicación.
 * Node.js: Se usa para crear la parte del servidor de la aplicación.
 * SOLID: Es usado a modo de base de datos descentralizada, aprovechando su fácil integración con react gracias a la librería Solid React Components.
