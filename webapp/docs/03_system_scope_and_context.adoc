@@ -40,10 +40,10 @@ La  aplicación se espera que funcione en todo tipo de dispositivos , tanto a ni
 
 [options="header",cols="1,2"]
 |===
-|Interfaces Técnicas|Descripcion
-|Solid|Se trata de la base del proyecto, donde los datos de los usuarios se encuentran descentralizados y portegidos almacenandolos en PODS.
+|Interfaces Técnicas|Descripción
+|Solid|Se trata de la base del proyecto, donde los datos de los usuarios se encuentran descentralizados y protegidos almacenandolos en PODS.
 |Javascript|Es el lenguaje de programación empleado para desarrollar la aplicación.
-|React|biblioteca de JavaScript de codigo abierto empleada para construir interfaces gráficas. 
-|Leaflet|una biblioteca JavaScript de código abierto para mapas interactivos compatibles con dispositivos móviles.
+|React|Biblioteca de JavaScript de codigo abierto empleada para construir interfaces gráficas. 
+|Leaflet|Una biblioteca JavaScript de código abierto para mapas interactivos compatibles con dispositivos móviles.
 |===
 
