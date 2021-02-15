@@ -1,25 +1,9 @@
 [[section-system-scope-and-context]]
 == System Scope and Context
 
-
-[role="arc42help"]
-****
-.Contents
-System scope and context - as the name suggests - delimits your system (i.e. your scope) from all its communication partners
-(neighboring systems and users, i.e. the context of your system). It thereby specifies the external interfaces.
-
-If necessary, differentiate the business context (domain specific inputs and outputs) from the technical context (channels, protocols, hardware).
-
-.Motivation
-The domain interfaces and technical interfaces to communication partners are among your system's most critical aspects. Make sure that you completely understand them.
-
-.Form
-Various options:
-
-* Context diagrams
-* Lists of communication partners and their interfaces.
-****
-
+Radarin es sistema descentralizado basado en SOLID para facilitar el encuentro entre amigos utilizando la localización del teléfono siempre 
+y cuando haya sido autorizada por el usuario. Permitiendo que cuando dos amigos se encuentran cerca esto pueda ser notificado, con el objetivo 
+de facilitar los encuentros. El sistema solamente almacenará localizaciones e instantes de tiempo en los que han ocurrido dichas localizaciones pero evitará almacenar cualquier otro tipo de información personal sobre los usuarios.
 
 === Business Context
 
