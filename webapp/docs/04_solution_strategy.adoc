@@ -1,7 +1,7 @@
 [[section-solution-strategy]]
 
 == Solution Strategy
-Una de las piedras angulares sobre la que esta basada la aplicación es el almacenamiento descentralizado de la información del usuario. SOLID no permite llevar a cabo esta administración de datos así que la estructura del proyecto girará entorno a el.
+Una de las piedras angulares sobre la que esta basada la aplicación es el almacenamiento descentralizado de la información del usuario. SOLID nos permite llevar a cabo esta administración de datos así que la estructura del proyecto girará entorno a el.
 
 Para desarrollar este proyecto hemos decidio usar React Native que, además de funcionar perfectamente con SOLID, permite desplegar la aplicación facilmente tanto en Android como en iOS. 
 

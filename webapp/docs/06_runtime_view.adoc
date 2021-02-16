@@ -30,28 +30,26 @@ There are many notations for describing scenarios, e.g.
 
 ****
 
-=== <Runtime Scenario 1>
+=== <Log In>
 
+Al iniciar la aplicación el usuario debe iniciar sesión con SOLID para acceder a la aplicación.
 
-* _<insert runtime diagram or textual description of the scenario>_
-* _<insert description of the notable aspects of the interactions between the
-building block instances depicted in this diagram.>_
+.El proceso de logueo seguiría los siguientes pasos:
+. El usuario entra en la aplicación y solicita loguearse
+. Se le pasa un formulario para rellenar los credentials
+. El usuario rellena el formulario con sus credenciales
+. Se realiza una autenticación de la información aportada
+. Se responde autorizando o denegando el acceso dependiendo del resultado de la autenticación
 
-It is possible to use a sequence diagram:
 
 [plantuml,"Sequence diagram",png]
 ----
-actor Alice
-actor Bob
-database Pod as "Bob's Pod"
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
-Alice  --> Pod: Store route
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: another authentication Response
+actor Usuario
+participant Radarin
+database Pod as "Pod del usuario"
+Usuario -> Radarin: Petición de autenticación
+Radarin --> Pod: Validación de credenciales
+Radarin  <- Pod: Respuesta a la validación
+Usuario <- Radarin: Respuesta a la autenticación
 ----
-=== <Runtime Scenario 2>
 
-=== ...
-
-=== <Runtime Scenario n>
