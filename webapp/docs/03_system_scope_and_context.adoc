@@ -15,7 +15,7 @@ Para cumplir el requisito de la descentralización, Radarin empleará SOLID para
 
 La aplicación se conectará con cada uno de los PODs, dependiendo de la información que necesite, para obtener o añadir la información adecuada.
 
-image:"3-1-Diagram.PNG"["Example Diagram"]
+image:3-1-Diagram.PNG["Example Diagram"]
 
 .Radarin
 |=========================================================
