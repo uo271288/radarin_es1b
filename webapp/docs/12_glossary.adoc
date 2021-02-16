@@ -27,5 +27,6 @@ Potentially more columns in case you need translations.
 |===
 | Term         | Definition
 | POD     | Personal Online Data-unit
-| W3C    | World Wide Web Consortium (Estandares para las páginas web)
+| W3C    | World Wide Web Consortium (Estándares para las páginas web)
+| Hooks  | API de React que permite asignar estados y otras características de React a los componentes de la aplicación, sin necesidad de construir clases expresamente para ello  
 |===
