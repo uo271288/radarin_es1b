@@ -7,12 +7,7 @@ de facilitar los encuentros. El sistema solamente almacenará localizaciones e i
 
 === Contexto empresarial
 
-[role="arc42help"]
-
-
-
 Para cumplir el requisito de la descentralización, Radarin empleará SOLID para el almacenamiento de los datos de los usuairos. Cada usuario tendrá un POD (lugar de almacenaje) independiente de los otros usuarios, y del que tendrá el control completo de sus datos.
-
 La aplicación se conectará con cada uno de los PODs, dependiendo de la información que necesite, para obtener o añadir la información adecuada.
 
 image:3-1-Diagram.PNG["Example Diagram"]
