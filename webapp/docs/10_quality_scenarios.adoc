@@ -3,49 +3,49 @@
 
 === Quality Tree
 
-image:10-DiagramaCalidad.png["Arbol de calidad para Radarin es1b"]
+image:10-DiagramaCalidad.png["Árbol de calidad para Radarin ES1B"]
 
 === Quality Scenarios
 
 ====Privacidad
 
 .Datos del Usuario
-La meta principal que se desea alcanzar es la protección de los datos del usuario final para que así se pueda evitar la descentralización de datos personales y con ello mejorar la privacidad de los usuarios. Para ello se emplean el sistema de PODs empleado por SOLID.
+La meta principal que se desea alcanzar es la protección de los datos del usuario final para que así se pueda evitar la descentralización de datos personales y con ello mejorar la privacidad de los usuarios. Para ello se emplea el sistema de PODs empleado por SOLID.
 
 .Datos de la empresa
 Aunque la empresa no guarda los datos privados del usuario, esta guarda otros datos que se deberán de proteger para que no sean visibles por personas ajenas a la empresa.
 
 ====Usabilidad
- .Aplicación movil
- El objetivo de la usabilidad en la plataforma móvil es que el empleo de las funcionalidades de la aplicación, sean fáciles e intuitivas, y que no dificulten el empleo de esta. Parra ello no solo hace falta que la interfaz de usuario este bien diseñada, sino que además no sea muy recargada visualmente.
+ .Aplicación móvil
+ El objetivo de la usabilidad en la plataforma móvil es que el empleo de las funcionalidades de la aplicación, sean fáciles e intuitivas, y que no dificulten el empleo de esta. Parra ello no solo hace falta que la interfaz de usuario esté bien diseñada, sino que además no sea muy recargada visualmente.
 
 .Aplicación web
-Para la plataforma web se desea seguir con los mismo principios que se explicaron para la aplicación móvil, solo que hay que añadir que también es muy importante seguir los principios usabilidad para la navegación web, no creando nuevos patrones que solo se empleen en nuestra aplicación.
+Para la plataforma web se desea seguir con los mismos principios que se explicaron para la aplicación móvil, solo que hay que añadir que también es muy importante seguir los principios de usabilidad para la navegación web, no creando nuevos patrones que solo se empleen en nuestra aplicación.
 
 ====Rendimiento
 .Menor número de fallos o bugs
-Como programadores de debe de presentar un proyecto con cero fallos, y aunque esto es casi imposible, el objetivo debe de ser que el número de fallos que pueda haber sea muy cercano a cero. Para ello se deberán de emplear todas las herramientas posibles para que no haya problemas en código, así como conocer el mayor número posible acciones que pueda llegar a realizar el usuario, así como sus posibles combinaciones.
+Como programadores debemos presentar un proyecto con cero fallos, y aunque esto es casi imposible, el objetivo debe de ser que el número de fallos que pueda haber sea muy cercano a cero. Para ello se emplearán todas las herramientas posibles para que no haya problemas en el código, así como conocer el mayor número posible de acciones que pueda llegar a realizar el usuario y sus posibles combinaciones.
 
 .Menor tiempo de espera posible
-Para nuestra aplicación deseamos que el usuario final no tenga que esperar a la hora de realizar las diferentes acciones que ofrece la aplicación, si es necesario que hay alguna espera este debe de ser lo mas pequeña posible e informando al usuario en todo momento de los procesos que se están realizando durante la espera.
+Para nuestra aplicación deseamos que el usuario final no tenga que esperar a la hora de realizar las diferentes acciones que se ofrecen. En caso de existir algún tiempo de espera, este debe de ser lo más breve posible y se debe informar al usuario en todo momento de los procesos que se están realizando durante la espera.
 
 ====Mantenibilidad
 .Código claro y uso de patrones de diseño
-Para poder mantener la aplicación el código debe de ser lo más limpio posible, pues puede ser que no sean los mismos programadores los que crean la aplicación de los que la mantienen. También es importante escoger el patrón de diseño que más se adapte al programa para ayudar a que sea fácil el mantenimiento y si es necesario la posterior modificación de la aplicación.
+Para poder mantener la aplicación el código debe de ser lo más limpio posible, pues puede suceder que no sean los mismos programadores los que crean la aplicación de los que la mantienen. También es importante escoger el patrón de diseño que más se adapte al programa para ayudar a que sea fácil el mantenimiento y si es necesario la posterior modificación de la aplicación.
 
 .Separación por responsabilidades
-Otro detalle importante para que la aplicación tenga una buena mantenibilidad es el empleo de un sistema que nos separe el código dependiendo de la responsabilidad que tenga, así diferenciamos la lógica, la interfaz de usuario y demás responsabilidades. 
+Otro detalle importante para que la aplicación tenga una buena mantenibilidad es el empleo de un sistema que separe el código dependiendo de la responsabilidad que tenga; así diferenciamos entre la lógica, la interfaz de usuario y demás responsabilidades. 
 
 ====Testeabilidad
 .Empleo de beta tester
-Parar probar la aplicación se emplean a persona ajenas al proceso de programación para probar la aplicación a así encontrar los posibles fallos que haya antes de darla a conocer. Para la selección de beta testers es necesario buscar al menos un representante de los perfiles de persona a los que esta orientada la paliación además de algunas personas que no encajen ellos para así poder conocer la reacción que pueden tener a la hora de interactuar con la aplicación.
+Par probar la aplicación se emplean personas ajenas al proceso de desarrollo para probar la aplicación y así encontrar los posibles fallos que haya antes de darla a conocer. Para la selección de beta testers es necesario buscar al menos un representante de los perfiles de persona a los que esté orientada la aplicación, además de algunas personas que no encajen con ese perfil para así poder conocer la reacción que pueden tener a la hora de interactuar con ella.
 
-=====Empleo de test Unitarios
-.Tets para la palicación en general
-Como se especificó en el apartado 1.2 de la documentación, las pruebas unitarias realizadas de forma automática en el propio servidor, para ello hay que configurarlas para que nos permita probar el funcionamiento general de la aplicación viendo que no hay problemas en la ejecución del programa.
+=====Empleo de Pruebas Unitarias
+.Test para la aplicación en general
+Como se especificó en el apartado 1.2 de la documentación, las pruebas unitarias son realizadas de forma automática en el propio servidor; para ello hay que configurarlas de forma que nos permita probar el funcionamiento general de la aplicación viendo que no hay problemas en la ejecución del programa.
 
 .Test para cada funcionalidad
-Además del funcionamiento general de la aplicación debemos de probar cana funcionalidad por separado y si se añade nueva funcionalidad añadir también las pruebas correspondientes.
+Además del funcionamiento general de la aplicación, debemos de probar cada funcionalidad por separado y si se añade nueva funcionalidad añadir también las pruebas correspondientes.
 
 ====Accesibilidad
-Con el objetivo que la aplicación sea accesible al mayor número de personas posibles, se desea dar a probar la aplicación a diferentes tipos de personas, cuyas condiciones a la hora de probar la aplicación sean diferentes ya sea por que tengan diferentes problemas físicos (ejemplo hipermetropía, daltonismo etc.) o por problemas ajenos a ellos (poca red, móviles pequeños …).
+Con el objetivo que la aplicación sea accesible para el mayor número de personas posibles, se desea dar a probar la aplicación a diferentes tipos de personas, cuyas condiciones a la hora de probar la aplicación sean diferentes ya sea porque tengan diferentes problemas físicos (ejemplo hipermetropía, daltonismo, etc.) o por problemas ajenos a ellos (mala conexión de red, dispositivos antiguos...).
