@@ -5,7 +5,7 @@
 [role="arc42help"]
 ****
 
-=== Contenido
+===Contenido
 
 Esta sección describe las principales normativas generales y las ideas de soluciones que son relevantes en múltiples partes de nuestro sistema.
 Se incluye una imagen para hacer referencia a todo lo que se explicará.
@@ -14,7 +14,7 @@ image:08-Crosscutting-Concepts-Structure-EN.PNG["Example Diagram"]
 
 
 
-=== Modelo de dominio
+===Modelo de dominio
 
 El usuario tendrá un grupo de amigos. 
 Podrá compartir su ubicación con el fin de saber que amigos se encuentran cerca de el.
@@ -22,23 +22,23 @@ El usuario aparte de su ubicación podrá ver la de sus amigos para ver si algun
 En las localizaciones se podrá compartir imágenes o videos y comentarios. 
 También se podrá iniciar chat con los amigos cercanos.
 
-=== Experiencia de usuario
+===Experiencia de usuario
 
 El objetivo de esta aplicación es que el usuario se adapte a utilizar los PODS sin que le resulte aparatoso ni molesto, introduciéndolo a un sistema descentralizado y seguro, en el que podrán compartir sus fotos y entrar en contacto con amigos cercanos. 
 A su vez proporcionales una aplicación con una interfaz similar a la de otras redes sociales a las que estén familiarizados.
 
-=== Conceptos de seguridad y protección
+===Conceptos de seguridad y protección
 
 Toda la información del usuario se encuentra almacenada en PODS , de manera que nadie excepto quien este autorizado por el mismo , puede acceder a sus datos.
 
-=== Patrones de diseño y Arquitectura
+===Patrones de diseño y Arquitectura
 
 La arquitectura que se empleara es MVC (Modelo Vista Controlador). 
 Para la aplicación móvil se empleará React Native.
 Los patrones de diseño aun no se han especificado.
 Estas decisiones aun no son decisivas debido a la temprana fase del proyecto en la que nos encontramos y pueden variar.
 
-=== Conceptos de desarrollo 
+===Conceptos de desarrollo 
 
 Radarin se desarrollará empleando React JS , Docker y la arquitectura SOLID. Se están discutiendo mas herramientas a emplear.
 Aun no se ha discutido si se utilizara alguna metodología ágil.
