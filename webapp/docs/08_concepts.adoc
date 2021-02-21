@@ -17,6 +17,8 @@ El usuario aparte de su ubicación podrá ver la de sus amigos para ver si algun
 En las localizaciones se podrá compartir imágenes o videos y comentarios. 
 También se podrá iniciar chat con los amigos cercanos.
 
+image:8.1DomainModel.PNG["Domain Model"]
+
 === Experiencia de usuario
 
 El objetivo de esta aplicación es que el usuario se adapte a utilizar los PODS sin que le resulte aparatoso ni molesto, introduciéndolo a un sistema descentralizado y seguro, en el que podrán compartir sus fotos y entrar en contacto con amigos cercanos. 
@@ -30,12 +32,12 @@ Toda la información del usuario se encuentra almacenada en PODS , de manera que
 
 La arquitectura que se empleara es MVC (Modelo Vista Controlador). 
 Para la aplicación móvil se empleará React Native.
-Los patrones de diseño aun no se han especificado.
-Estas decisiones aun no son decisivas debido a la temprana fase del proyecto en la que nos encontramos y pueden variar.
+Los patrones de diseño aún no se han especificado.
+Estas decisiones aún no son decisivas debido a la temprana fase del proyecto en la que nos encontramos y pueden variar.
 
 === Conceptos de desarrollo 
 
 Radarin se desarrollará empleando React JS , Docker y la arquitectura SOLID. Se están discutiendo mas herramientas a emplear.
-Aun no se ha discutido si se utilizara alguna metodología ágil.
+Aún no se ha discutido si se utilizara alguna metodología ágil.
 
 
