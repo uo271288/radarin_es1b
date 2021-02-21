@@ -12,7 +12,7 @@ Se incluye una imagen para hacer referencia a todo lo que se explicará.
 
 image:08-Crosscutting-Concepts-Structure-EN.PNG["Example Diagram"]
 
-----
+
 
 === Modelo de dominio
 
