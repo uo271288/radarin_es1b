@@ -1,67 +1,43 @@
 [[section-concepts]]
 == Cross-cutting Concepts
+=== Contenido
 
+Esta sección describe las principales normativas generales y las ideas de soluciones que son relevantes en múltiples partes de nuestro sistema.
+Se incluye una imagen para hacer referencia a todo lo que se explicará.
 
-[role="arc42help"]
-****
-.Content
-This section describes overall, principal regulations and solution ideas that are
-relevant in multiple parts (= cross-cutting) of your system.
-Such concepts are often related to multiple building blocks.
-They can include many different topics, such as
-
-* domain models
-* architecture patterns or design patterns
-* rules for using specific technology
-* principal, often technical decisions of overall decisions
-* implementation rules
-
-.Motivation
-Concepts form the basis for _conceptual integrity_ (consistency, homogeneity)
-of the architecture. Thus, they are an important contribution to achieve inner qualities of your system.
-
-Some of these concepts cannot be assigned to individual building blocks
-(e.g. security or safety). This is the place in the template that we provided for a
-cohesive specification of such concepts.
-
-.Form
-The form can be varied:
-
-* concept papers with any kind of structure
-* cross-cutting model excerpts or scenarios using notations of the architecture views
-* sample implementations, especially for technical concepts
-* reference to typical usage of standard frameworks (e.g. using Hibernate for object/relational mapping)
-
-.Structure
-A potential (but not mandatory) structure for this section could be:
-
-* Domain concepts
-* User Experience concepts (UX)
-* Safety and security concepts
-* Architecture and design patterns
-* "Under-the-hood"
-* development concepts
-* operational concepts
-
-Note: it might be difficult to assign individual concepts to one specific topic
-on this list.
-
-image:08-Crosscutting-Concepts-Structure-EN.png["Possible topics for crosscutting concepts"]
-****
-
-
-=== Domain model
-
-image:UmlDiagram.png["Example UML Diagram"]
+image:08-Crosscutting-Concepts-Structure-EN.PNG["Example Diagram"]
 
 
 
-=== _<Concept 2>_
+=== Modelo de dominio
 
-_<explanation>_
+El usuario tendrá un grupo de amigos. 
+Podrá compartir su ubicación con el fin de saber que amigos se encuentran cerca de el.
+El usuario aparte de su ubicación podrá ver la de sus amigos para ver si alguno se encuentra cerca. 
+En las localizaciones se podrá compartir imágenes o videos y comentarios. 
+También se podrá iniciar chat con los amigos cercanos.
 
-...
+image:8.1DomainModel.PNG["Domain Model"]
 
-=== _<Concept n>_
+=== Experiencia de usuario
 
-_<explanation>_
+El objetivo de esta aplicación es que el usuario se adapte a utilizar los PODS sin que le resulte aparatoso ni molesto, introduciéndolo a un sistema descentralizado y seguro, en el que podrán compartir sus fotos y entrar en contacto con amigos cercanos. 
+A su vez proporcionales una aplicación con una interfaz similar a la de otras redes sociales a las que estén familiarizados.
+
+=== Conceptos de seguridad y protección
+
+Toda la información del usuario se encuentra almacenada en PODS , de manera que nadie excepto quien este autorizado por el mismo , puede acceder a sus datos.
+
+=== Patrones de diseño y Arquitectura
+
+La arquitectura que se empleara es MVC (Modelo Vista Controlador). 
+Para la aplicación móvil se empleará React Native.
+Los patrones de diseño aún no se han especificado.
+Estas decisiones aún no son decisivas debido a la temprana fase del proyecto en la que nos encontramos y pueden variar.
+
+=== Conceptos de desarrollo 
+
+Radarin se desarrollará empleando React JS , Docker y la arquitectura SOLID. Se están discutiendo mas herramientas a emplear.
+Aún no se ha discutido si se utilizara alguna metodología ágil.
+
+
