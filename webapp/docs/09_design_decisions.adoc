@@ -1,26 +1,15 @@
 [[section-design-decisions]]
-== Design Decisions
+== Decisiones de Diseño
 
 
 [role="arc42help"]
-****
-.Contents
-Important, expensive, large scale or risky architecture decisions including rationals.
-With "decisions" we mean selecting one alternative based on given criteria.
-
-Please use your judgement to decide whether an architectural decision should be documented
-here in this central section or whether you better document it locally
-(e.g. within the white box template of one building block).
-
-Avoid redundancy. Refer to section 4, where you already captured the most important decisions of your architecture.
-
-.Motivation
-Stakeholders of your system should be able to comprehend and retrace your decisions.
-
-.Form
-Various options:
-
-* List or table, ordered by importance and consequences or:
-* more detailed in form of separate sections per decision
-* ADR (architecture decision record) for every important decision
-****
+[options="header",cols="1,2,1,2,2"]
+|===
+|Sección|Decisión|Fecha|Ventajas|Inconvenientes
+|SOLID|Base del proyecto y requisito imprescindible|02-02-2021|Los datos son alojados en unidades personales, favoreciendo la privacidad de los usuarios.|Es una tecnología relativamente nueva, por lo que no existe mucha documentación ni ejemplos.
+|React|Librería para construir la Interfaz de Usuario|02-02-2021|Es simple, dispone de mucha documentación y una alta testabilidad.|Desconocimiento actual sobre la librería y su funcionamiento.
+|Node.js|Lenguaje de programación en el servidor y marcos de trabajo|02-02-2021|Es sencillo y lo suficientemente versátil como para construir la aplicación entera en ambas plataformas de dispositivos.|Resulta bastante pesado con respecto a sus módulos.
+|Heroku|Repositorio remoto en el que alojar la aplicación|02-02-2021|El servicio es gratuito.|Costoso a nivel de rendimiento.
+|Docker|Desarrollo y puesta en marcha de la aplicación|02-02-2021|_Sin información_|_Sin información_
+|Leaflet|Biblioteca de gestión de mapas interactivos|09-02-2021|Código abierto, no precisa de una cuenta de Google y dispone de mucha documentación.|_Sin información_
+|===
