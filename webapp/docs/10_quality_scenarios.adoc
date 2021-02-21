@@ -1,63 +1,51 @@
 [[section-quality-scenarios]]
 == Quality Requirements
 
-
-[role="arc42help"]
-****
-
-.Content
-This section contains all quality requirements as quality tree with scenarios. The most important ones have already been described in section 1.2. (quality goals)
-
-Here you can also capture quality requirements with lesser priority,
-which will not create high risks when they are not fully achieved.
-
-.Motivation
-Since quality requirements will have a lot of influence on architectural
-decisions you should know for every stakeholder what is really important to them,
-concrete and measurable.
-****
-
 === Quality Tree
 
-[role="arc42help"]
-****
-.Content
-The quality tree (as defined in ATAM – Architecture Tradeoff Analysis Method) with quality/evaluation scenarios as leafs.
-
-.Motivation
-The tree structure with priorities provides an overview for a sometimes large number of quality requirements.
-
-.Form
-The quality tree is a high-level overview of the quality goals and requirements:
-
-* tree-like refinement of the term "quality". Use "quality" or "usefulness" as a root
-* a mind map with quality categories as main branches
-
-In any case the tree should include links to the scenarios of the following section.
-****
+image:10-DiagramaCalidad.png["Arbol de calidad para Radarin es1b"]
 
 === Quality Scenarios
 
-[role="arc42help"]
-****
-.Contents
-Concretization of (sometimes vague or implicit) quality requirements using (quality) scenarios.
+====Privacidad
 
-These scenarios describe what should happen when a stimulus arrives at the system.
+.Datos del Usuario
+La meta principal que se desea alcanzar es la protección de los datos del usuario final para que así se pueda evitar la descentralización de datos personales y con ello mejorar la privacidad de los usuarios. Para ello se emplean el sistema de PODs empleado por SOLID.
 
-For architects, two kinds of scenarios are important:
+.Datos de la empresa
+Aunque la empresa no guarda los datos privados del usuario, esta guarda otros datos que se deberán de proteger para que no sean visibles por personas ajenas a la empresa.
 
-* Usage scenarios (also called application scenarios or use case scenarios) describe the system’s runtime reaction to a certain stimulus. This also includes scenarios that describe the system’s efficiency or performance. Example: The system reacts to a user’s request within one second.
-* Change scenarios describe a modification of the system or of its immediate environment. Example: Additional functionality is implemented or requirements for a quality attribute change.
+====Usabilidad
+ .Aplicación movil
+ El objetivo de la usabilidad en la plataforma móvil es que el empleo de las funcionalidades de la aplicación, sean fáciles e intuitivas, y que no dificulten el empleo de esta. Parra ello no solo hace falta que la interfaz de usuario este bien diseñada, sino que además no sea muy recargada visualmente.
 
-.Motivation
-Scenarios make quality requirements concrete and allow to
-more easily measure or decide whether they are fulfilled.
+.Aplicación web
+Para la plataforma web se desea seguir con los mismo principios que se explicaron para la aplicación móvil, solo que hay que añadir que también es muy importante seguir los principios usabilidad para la navegación web, no creando nuevos patrones que solo se empleen en nuestra aplicación.
 
-Especially when you want to assess your architecture using methods like
-ATAM you need to describe your quality goals (from section 1.2)
-more precisely down to a level of scenarios that can be discussed and evaluated.
+====Rendimiento
+.Menor número de fallos o bugs
+Como programadores de debe de presentar un proyecto con cero fallos, y aunque esto es casi imposible, el objetivo debe de ser que el número de fallos que pueda haber sea muy cercano a cero. Para ello se deberán de emplear todas las herramientas posibles para que no haya problemas en código, así como conocer el mayor número posible acciones que pueda llegar a realizar el usuario, así como sus posibles combinaciones.
 
-.Form
-Tabular or free form text.
-****
+.Menor tiempo de espera posible
+Para nuestra aplicación deseamos que el usuario final no tenga que esperar a la hora de realizar las diferentes acciones que ofrece la aplicación, si es necesario que hay alguna espera este debe de ser lo mas pequeña posible e informando al usuario en todo momento de los procesos que se están realizando durante la espera.
+
+====Mantenibilidad
+.Código claro y uso de patrones de diseño
+Para poder mantener la aplicación el código debe de ser lo más limpio posible, pues puede ser que no sean los mismos programadores los que crean la aplicación de los que la mantienen. También es importante escoger el patrón de diseño que más se adapte al programa para ayudar a que sea fácil el mantenimiento y si es necesario la posterior modificación de la aplicación.
+
+.Separación por responsabilidades
+Otro detalle importante para que la aplicación tenga una buena mantenibilidad es el empleo de un sistema que nos separe el código dependiendo de la responsabilidad que tenga, así diferenciamos la lógica, la interfaz de usuario y demás responsabilidades. 
+
+====Testeabilidad
+.Empleo de beta tester
+Parar probar la aplicación se emplean a persona ajenas al proceso de programación para probar la aplicación a así encontrar los posibles fallos que haya antes de darla a conocer. Para la selección de beta testers es necesario buscar al menos un representante de los perfiles de persona a los que esta orientada la paliación además de algunas personas que no encajen ellos para así poder conocer la reacción que pueden tener a la hora de interactuar con la aplicación.
+
+=====Empleo de test Unitarios
+.Tets para la palicación en general
+Como se especificó en el apartado 1.2 de la documentación, las pruebas unitarias realizadas de forma automática en el propio servidor, para ello hay que configurarlas para que nos permita probar el funcionamiento general de la aplicación viendo que no hay problemas en la ejecución del programa.
+
+.Test para cada funcionalidad
+Además del funcionamiento general de la aplicación debemos de probar cana funcionalidad por separado y si se añade nueva funcionalidad añadir también las pruebas correspondientes.
+
+====Accesibilidad
+Con el objetivo que la aplicación sea accesible al mayor número de personas posibles, se desea dar a probar la aplicación a diferentes tipos de personas, cuyas condiciones a la hora de probar la aplicación sean diferentes ya sea por que tengan diferentes problemas físicos (ejemplo hipermetropía, daltonismo etc.) o por problemas ajenos a ellos (poca red, móviles pequeños …).
