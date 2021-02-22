@@ -3,7 +3,6 @@
 === Contenido
 
 Esta sección describe las principales normativas generales y las ideas de soluciones que son relevantes en múltiples partes de nuestro sistema.
-Se incluye una imagen para hacer referencia a todo lo que se explicará.
 
 image:08-Crosscutting-Concepts-Structure-EN.png["Example Diagram"]
 
