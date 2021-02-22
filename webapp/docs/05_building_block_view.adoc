@@ -57,7 +57,6 @@ In the best case you will get away with examples or simple signatures.
 
 ****
 
-_**<Overview Diagram>**_
 [plantuml,"Sequence diagram",png]
 ----
 actor Usuario
