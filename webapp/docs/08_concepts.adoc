@@ -1,5 +1,5 @@
 [[section-concepts]]
-== Conceptos transversales
+== Conceptos Cross-cutting
 === Contenido
 
 Esta sección describe las principales normativas generales y las ideas de soluciones que son relevantes en múltiples partes de nuestro sistema.
