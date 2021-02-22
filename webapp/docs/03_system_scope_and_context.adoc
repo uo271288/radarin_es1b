@@ -55,5 +55,6 @@ Se espera que la aplicación funcione en todo tipo de dispositivos: tanto a nive
 |Javascript|Es el lenguaje de programación empleado para desarrollar la aplicación.
 |React|Biblioteca de JavaScript de codigo abierto empleada para construir interfaces gráficas. 
 |Leaflet|Una biblioteca JavaScript de código abierto para mapas interactivos compatibles con dispositivos móviles.
+|Docker|Es un proyecto de código abierto que automatiza el despliegue de aplicaciones dentro de contenedores de software.
 |===
 
