@@ -28,5 +28,6 @@ Potentially more columns in case you need translations.
 | Term         | Definition
 | POD     | Personal Online Data-unit
 | W3C    | World Wide Web Consortium (Estándares para las páginas web)
-| Hooks  | API de React que permite asignar estados y otras características de React a los componentes de la aplicación, sin necesidad de construir clases expresamente para ello  
+| Hooks  | API de React que permite asignar estados y otras características de React a los componentes de la aplicación, sin necesidad de construir clases expresamente para ello 
+| MVC | Modelo-Vista-Controlador. Patrón arquitectónico de diseño de software que divide la aplicación en tres grandes capas: una destinada a la lógica de negocio (Modelo); una destinada a la interfaz de usuario (Vista) y una capa intermedia que captura la interacción del usuario, realiza las operaciones necesarias en la lógica de negocio y lo refleja en la vista (Controlador).
 |===
