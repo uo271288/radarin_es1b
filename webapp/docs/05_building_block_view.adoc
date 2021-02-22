@@ -57,6 +57,7 @@ In the best case you will get away with examples or simple signatures.
 
 ****
 
+
 Usaremos como estructura el patrón MVC.
 
 image:5.building-block.png["Building Block View"]

@@ -1,8 +1,6 @@
 [[section-design-decisions]]
 == Decisiones de Diseño
 
-
-[role="arc42help"]
 [options="header",cols="1,2,1,2,2"]
 |===
 |Sección|Decisión|Fecha|Ventajas|Inconvenientes
