@@ -1,11 +1,10 @@
 [[section-quality-scenarios]]
-== Quality Requirements
-
-=== Quality Tree
+== Requisitos de Calidad
+=== Árbol de calidad
 
 image:10-DiagramaCalidad.png["Árbol de calidad para Radarin ES1B"]
 
-=== Quality Scenarios
+=== Escenarios de calidad
 
 ==== Privacidad
 
