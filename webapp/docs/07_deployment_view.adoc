@@ -34,7 +34,7 @@ when your infrastructure is more complex.
 * When your (hardware) stakeholders prefer other kinds of diagrams rather than the deployment diagram, let them use any kind that is able to show nodes and channels of the infrastructure.
 ****
 
-El modelo de diseño empleado es MVC (Modelo Vista-Controlador). Siguiendo este patrón obtenemos un descoplamiento del modelo. Además, obtendremos un controlador común a todas las vistas, particularizando estas a cada uno  las vistas (en principio dos: ordenadores y móviles).
+El modelo de diseño empleado es MVC (Modelo Vista-Controlador). Siguiendo este patrón obtenemos un desacoplamiento del modelo. Además, obtendremos un controlador común a todas las vistas, particularizando estas a cada uno  las vistas (en principio dos: ordenadores y móviles).
 
 Motivación::
 
@@ -48,7 +48,7 @@ Rasgos de Rendimiento y/o Calidad::
 - La aplicación se desplegará en Heroku, y será desde donde el controlador gestione las vistas y el acceso a la capa de persistencia.
 
 
-=== Infrastructure Level 1
+=== Diagrama MVC
 
 [role="arc42help"]
 ****
