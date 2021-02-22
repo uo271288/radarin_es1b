@@ -57,15 +57,10 @@ In the best case you will get away with examples or simple signatures.
 
 ****
 
-[plantuml,"Sequence diagram",png]
-----
-actor Usuario
-participant Radarin
-database Pod as "Pod del usuario"
-Usuario -> Radarin: Usa
-Radarin -> Pod: 
-Radarin  <- Pod: 
-----
+
+Usaremos como estructura el patrón MVC.
+
+image:5.building-block.png["Building Block View"]
 
 [cols="1,2" options="header"]
 |===
@@ -116,7 +111,7 @@ Leave out normal, simple, boring or standardized parts of your system
 ...describes the internal structure of _building block 1_.
 ****
 
-_Es la parte de la aplicación que se comunicará directamente con el usuario, mostrando su información y la de sus amigos cercanos.
+_Es la parte de la aplicación que se comunicará directamente con el usuario, mostrando su información y la de sus amigos cercanos._
 
 ==== Capa de negocio
 

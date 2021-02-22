@@ -1,32 +1,12 @@
 [[section-glossary]]
-== Glossary
+== Glosario
 
-
-
-[role="arc42help"]
-****
-.Contents
-The most important domain and technical terms that your stakeholders use when discussing the system.
-
-You can also see the glossary as source for translations if you work in multi-language teams.
-
-.Motivation
-You should clearly define your terms, so that all stakeholders
-
-* have an identical understanding of these terms
-* do not use synonyms and homonyms
-
-.Form
-A table with columns <Term> and <Definition>.
-
-Potentially more columns in case you need translations.
-
-****
 
 [options="header"]
 |===
 | Term         | Definition
 | POD     | Personal Online Data-unit
 | W3C    | World Wide Web Consortium (Estándares para las páginas web)
-| Hooks  | API de React que permite asignar estados y otras características de React a los componentes de la aplicación, sin necesidad de construir clases expresamente para ello  
+| Hooks  | API de React que permite asignar estados y otras características de React a los componentes de la aplicación, sin necesidad de construir clases expresamente para ello 
+| MVC | Modelo-Vista-Controlador. Patrón arquitectónico de diseño de software que divide la aplicación en tres grandes capas: una destinada a la lógica de negocio (Modelo); una destinada a la interfaz de usuario (Vista) y una capa intermedia que captura la interacción del usuario, realiza las operaciones necesarias en la lógica de negocio y lo refleja en la vista (Controlador).
 |===

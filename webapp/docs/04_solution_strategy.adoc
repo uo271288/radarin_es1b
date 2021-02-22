@@ -1,6 +1,6 @@
 [[section-solution-strategy]]
 
-== Solution Strategy
+== Descripción de la estrategia del problema
 Una de las piedras angulares sobre la que esta basada la aplicación es el almacenamiento descentralizado de la información del usuario. SOLID nos permite llevar a cabo esta administración de datos así que la estructura del proyecto girará en torno a él.
 
 Para desarrollar este proyecto hemos decidido usar React Native que, además de funcionar perfectamente con SOLID, permite desplegar la aplicación fácilmente tanto en Android como en iOS. 
