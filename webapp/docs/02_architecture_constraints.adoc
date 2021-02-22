@@ -5,10 +5,9 @@
 [options="header", width="100%"]
 |===
 |Restricción|Explicación
-|Uso de React|Biblioteca de JS que nos ayuda a crear las interfaces de usuario
-|Solid|Se seguirán las especificaciones SOLID durante el desarrollo del proyecto
-|Docker|Se utilizará la herramienta docker para la descentralizacion de los datos
-|Leaflet|Biblioteca de JS con mapas interactivos
+|SOLID|Se seguirán las especificaciones SOLID durante el desarrollo del proyecto
+|Docker|Se utilizará la herramienta Docker para la descentralización de los datos
+|Heroku|Repositorio remoto en el que se debe alojar la aplicación y su documentación
 |===
 
 === Restricciones organizativas
@@ -17,13 +16,13 @@
 |Restricción|Explicación
 |Fecha de entrega|El proyecto se entregará antes del fin del curso
 |Organización|El equipo se compone de 7 personas
-|Reuniones|Durante las clases de prácticas el equipo se reunirá para ver que objetivos semanales se han cumplido, se harán más reuniones durante la semana si fuera necesario
+|Reuniones|Durante las clases de prácticas el equipo se reunirá para ver qué objetivos semanales se han cumplido; se harán más reuniones durante la semana si fuera necesario
 |===
 
 === Convenciones
 [options="header", width="100%"]
 |===
 |Restricción|Explicación
-|Documentación|La documentación se escribirá en su totalidad con arc42
+|Documentación|La documentación se escribirá en su totalidad siguiendo la estructura de arc42
 |Git|Para facilitar el control de versiones usaremos GitHub
 |===

@@ -36,16 +36,16 @@ when your infrastructure is more complex.
 
 El modelo de diseño empleado es MVC (Modelo Vista-Controlador). Siguiendo este patrón obtenemos un descoplamiento del modelo. Además, obtendremos un controlador común a todas las vistas, particularizando estas a cada uno  las vistas (en principio dos: ordenadores y móviles).
 
-Motivation::
+Motivación::
 
-La principal motivación es conseguir una aplicación con la misma funcionalidad en dos grupos de dispositivos diferenciados: ordenadores  y móviles; con una implementación  los más eficiente posible, es decir, común (en lo posible) a ambos. 
+El principal objetivo es conseguir una aplicación con la misma funcionalidad en dos grupos de dispositivos diferenciados: ordenadores  y móviles; con una implementación  los más eficiente posible, es decir, común (en lo posible) a ambos. 
 
 
-Quality and/or Performance Features::
+Rasgos de Rendimiento y/o Calidad::
 
-Los datos se almacenarán en PODs, de los que el usuario tendrán el control completo. Por lo tanto, Radarin no almacenará ningún dato, y será el usuario el que tenga la capacidad de decidir sobre ssu información.
-Gracias al MVC, las vistas son diferentes para ordenadores y móviles, pero el resto de capas (negocio, persistencia,...) son comunes para cada dispositivo.
-La aplicación se desplegará en heroku, y será desde donde el controlador gestione las vistas y el acceso a la capa de persistencia.
+- Los datos se almacenarán en PODs, de los que el usuario tendrán el control completo. Por lo tanto, Radarin no almacenará ningún dato, y será el usuario el que tenga la capacidad de decidir sobre su información.
+- Gracias al MVC, las vistas son diferentes para ordenadores y móviles, pero el resto de capas (negocio, persistencia,...) son comunes para cada dispositivo.
+- La aplicación se desplegará en Heroku, y será desde donde el controlador gestione las vistas y el acceso a la capa de persistencia.
 
 
 === Infrastructure Level 1

@@ -17,7 +17,7 @@ Aunque la empresa no guarda los datos privados del usuario, esta guarda otros da
 ==== Usabilidad
 
 .Aplicación móvil
-El objetivo de la usabilidad en la plataforma móvil es que el empleo de las funcionalidades de la aplicación, sean fáciles e intuitivas, y que no dificulten el empleo de esta. Parra ello no solo hace falta que la interfaz de usuario esté bien diseñada, sino que además no sea muy recargada visualmente.
+El objetivo de la usabilidad en la plataforma móvil es que el empleo de las funcionalidades de la aplicación, sean fáciles e intuitivas, y que no dificulten el empleo de esta. Para ello no solo hace falta que la interfaz de usuario esté bien diseñada, sino que además no sea muy recargada visualmente.
 
 .Aplicación web
 Para la plataforma web se desea seguir con los mismos principios que se explicaron para la aplicación móvil, solo que hay que añadir que también es muy importante seguir los principios de usabilidad para la navegación web, no creando nuevos patrones que solo se empleen en nuestra aplicación.

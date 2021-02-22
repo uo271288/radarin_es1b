@@ -1,7 +1,7 @@
 [[section-system-scope-and-context]]
 == Alcance y contexto del sistema
 
-Radarin es sistema descentralizado basado en SOLID para facilitar el encuentro entre amigos utilizando la localización del teléfono siempre 
+Radarin es un sistema descentralizado basado en SOLID para facilitar el encuentro entre amigos utilizando la localización del teléfono siempre 
 y cuando haya sido autorizada por el usuario, permitiendo que cuando dos amigos se encuentran cerca esto pueda ser notificado, con el objetivo 
 de facilitar los encuentros. El sistema solamente almacenará localizaciones e instantes de tiempo en los que han ocurrido dichas localizaciones pero evitará almacenar cualquier otro tipo de información personal sobre los usuarios.
 

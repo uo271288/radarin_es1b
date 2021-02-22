@@ -13,7 +13,7 @@ Las principales librerías a usar son las siguientes:
 * React: Biblioteca de Javascript usada para crear el front-end de la aplicación.
 * Node.js: Se usa para crear la parte del servidor de la aplicación.
 * SOLID: Es usado a modo de base de datos descentralizada, aprovechando su fácil integración con react gracias a la librería Solid React Components.
-* Leaflet: Se usan los componentes que nos proporciona React-leaflet para implementar los mapas los mapas de la aplicación.
+* Leaflet: Se usan los componentes que nos proporciona React-Leaflet para implementar los mapas de la aplicación.
 
 ==== Estructura
 Para conseguir que el proyecto sea mantenible su estructura estará basada en contenedores, que serán implementados usando la herramienta Docker. 

@@ -11,32 +11,31 @@ image:08-Crosscutting-Concepts-Structure-EN.png["Example Diagram"]
 === Modelo de dominio
 
 El usuario tendrá un grupo de amigos. 
-Podrá compartir su ubicación con el fin de saber que amigos se encuentran cerca de el.
+Podrá compartir su ubicación con el fin de saber qué amigos se encuentran cerca de él.
 El usuario aparte de su ubicación podrá ver la de sus amigos para ver si alguno se encuentra cerca. 
 En las localizaciones se podrá compartir imágenes o videos y comentarios. 
-También se podrá iniciar chat con los amigos cercanos.
 
 image:8.1DomainModel.png["Domain Model"]
 
 === Experiencia de usuario
 
 El objetivo de esta aplicación es que el usuario se adapte a utilizar los PODS sin que le resulte aparatoso ni molesto, introduciéndolo a un sistema descentralizado y seguro, en el que podrán compartir sus fotos y entrar en contacto con amigos cercanos. 
-A su vez proporcionales una aplicación con una interfaz similar a la de otras redes sociales a las que estén familiarizados.
+A su vez proporcionarles una aplicación con una interfaz similar a la de otras redes sociales a las que estén familiarizados.
 
 === Conceptos de seguridad y protección
 
-Toda la información del usuario se encuentra almacenada en PODS , de manera que nadie excepto quien este autorizado por el mismo , puede acceder a sus datos.
+Toda la información del usuario se encuentra almacenada en PODS, de manera que nadie excepto quien este autorizado por el mismo pueda acceder a sus datos.
 
 === Patrones de diseño y Arquitectura
 
-La arquitectura que se empleara es MVC (Modelo Vista Controlador). 
+La arquitectura que se empleará es MVC (Modelo Vista Controlador). 
 Para la aplicación móvil se empleará React Native.
-Los patrones de diseño aún no se han especificado.
-Estas decisiones aún no son decisivas debido a la temprana fase del proyecto en la que nos encontramos y pueden variar.
+Los patrones de diseño aún no se han especificado más allá de este;
+estas decisiones, que pueden variar, aún no han sido tomadas en su totalidad debido a la temprana fase del proyecto en la que nos encontramos.
 
 === Conceptos de desarrollo 
 
-Radarin se desarrollará empleando React JS , Docker y la arquitectura SOLID. Se están discutiendo mas herramientas a emplear.
-Aún no se ha discutido si se utilizara alguna metodología ágil.
+Radarin se desarrollará empleando React JS , Docker y la arquitectura SOLID. Se están discutiendo más herramientas a emplear.
+Aún no se ha escogido una metodología ágil, aunque se baraja la posibilidad de emplear Scrum.
 
 
