@@ -33,9 +33,6 @@ Para la aplicación móvil se empleará React Native.
 Los patrones de diseño aún no se han especificado más allá de este;
 estas decisiones, que pueden variar, aún no han sido tomadas en su totalidad debido a la temprana fase del proyecto en la que nos encontramos.
 
-=== Conceptos de desarrollo 
 
-Radarin se desarrollará empleando React JS , Docker y la arquitectura SOLID. Se están discutiendo más herramientas a emplear.
-Aún no se ha escogido una metodología ágil, aunque se baraja la posibilidad de emplear Scrum.
 
 
