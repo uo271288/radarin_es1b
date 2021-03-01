@@ -60,13 +60,13 @@ In the best case you will get away with examples or simple signatures.
 
 Usaremos como estructura el patrón MVC.
 
-image:5.building-block.png["Building Block View"]
+image:5.1-Grafico2.png["Building Block View"]
 
 [cols="1,2" options="header"]
 |===
 | **Name** | **Responsibility**
 | _Radarin_ | _Aplicación que permite al usuario comunicarse con sus amigos cercanos_
-| _POD_ | _Almacena toda la información de la aplicación_
+| _Base de datos_ | _Almacena toda la información de la aplicación_
 |===
 
 
@@ -124,4 +124,8 @@ _Es la parte de la aplicación que se ocupará de recibir las acciones del usuar
 _Es la parte de la aplicación que realizará las acciones de escritura y lectura con los PODs, que es donde se almacena la información._
 
 
+=== Nivel 3
 
+La base de datos se divide en 2 partes: el POD y la base de datos de Mongo.
+En el POD se almacenará la lista de amigos y en el Mongo las ubicaciones.
+El cliente en react intercambiara información con el servidor de Node.js que obtiene la información de la base de datos.
