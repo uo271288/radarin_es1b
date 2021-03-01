@@ -53,3 +53,32 @@ Radarin  <- Pod: Respuesta a la validación
 Usuario <- Radarin: Respuesta a la autenticación
 ----
 
+=== <Localizaciones de amigos>
+
+Una funcionalidad que ofrece la aplicación es representar la ubicación de los amigos en un mapa.
+
+.El proceso para obtener este mapa con ubicaciones es el siguiente:
+. El usuario entra en la aplicación y se dirige a la ventana de ubición de amigos
+. React recive la petición y solocita al servidor las ubicaciones de los amigos
+. El servidor consulta en el POD los amigos del usuario
+. Una vez tiene los amigos, obtiene las localizaciones de estos usuarios en la base de datos
+. El servidor recibe las ubicaciones y se las pasa al cliente
+. El cliente muestra el mapa con las ubicaciones de los amigos al usuario
+
+
+[plantuml,"Sequence diagram",png]
+----
+actor Usuario
+participant Cliente
+participant Servidor
+database Pod as "Pod del usuario"
+database BD as "MongoDB"
+Usuario -> Cliente: Petición de vista de ubicaciones
+Cliente --> Servidor: Petición de ubicaciones
+Servidor --> Pod: Consulta la lista de amigos
+Servidor <-- Pod: Responde con la lista de amigos
+Servidor --> BD: Consulta las ubicaciones de los amigos dados
+Servidor <-- BD: Responde con las lista de ubicaciones
+Cliente <-- Servidor: Responde con la lista de ubicaciones dadas
+Usuario <- Cliente: Responde con una vista en la que se muestre el mapa deseado
+----
