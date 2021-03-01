@@ -12,4 +12,4 @@
 
 === Deudas técnicas
 - Lentitud de respuesta al utilizar Heroku para alojar nuestra aplicación.
-- Peor rendimiento al utilizar SOLID.
+- Al utilizar SOLID ganamos en privacidad, sin embargo su rendimiento es bastante pobre.
