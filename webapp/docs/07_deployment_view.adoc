@@ -36,6 +36,8 @@ when your infrastructure is more complex.
 
 El modelo de diseño empleado es MVC (Modelo Vista-Controlador). Siguiendo este patrón obtenemos un desacoplamiento del modelo. Además, obtendremos un controlador común a todas las vistas, particularizando estas a cada uno  las vistas (en principio dos: ordenadores y móviles).
 
+image:7.1Diagrama-Despliegue.png["Diagrama de Despliegue de la aplicación"]
+
 Motivación::
 
 El principal objetivo es conseguir una aplicación con la misma funcionalidad en dos grupos de dispositivos diferenciados: ordenadores  y móviles; con una implementación  los más eficiente posible, es decir, común (en lo posible) a ambos. 
