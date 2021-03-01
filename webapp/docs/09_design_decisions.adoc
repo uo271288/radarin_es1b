@@ -6,6 +6,7 @@
 |Sección|Decisión|Fecha|Ventajas|Inconvenientes
 |Node.js|Lenguaje de programación en el servidor y marcos de trabajo|02-02-2021|Es sencillo y lo suficientemente versátil como para construir la aplicación entera en ambas plataformas de dispositivos.|Resulta bastante pesado con respecto a sus módulos.
 |React|Librería para construir la Interfaz de Usuario|02-02-2021|Es simple, dispone de mucha documentación y una alta testabilidad.|Desconocimiento actual sobre la librería y su funcionamiento.
+|Mongo|Base de datos para almacenar la información de las ubicaciones.|01-03-2021|Código abierto, implementación sencilla y gran compatibilidad con Node.js|Criterios de consulta y datos limitados únicamente a formato JSON
 |Heroku|Repositorio remoto en el que alojar la aplicación|02-02-2021|El servicio es gratuito.|Costoso a nivel de rendimiento.
 |Leaflet|Biblioteca de gestión de mapas interactivos|09-02-2021|Código abierto, no precisa de una cuenta de Google y dispone de mucha documentación.|_Sin información_
 |===
