@@ -4,10 +4,8 @@
 [options="header",cols="1,2,1,2,2"]
 |===
 |Sección|Decisión|Fecha|Ventajas|Inconvenientes
-|SOLID|Base del proyecto y requisito imprescindible|02-02-2021|Los datos son alojados en unidades personales, favoreciendo la privacidad de los usuarios.|Es una tecnología relativamente nueva, por lo que no existe mucha documentación ni ejemplos.
-|React|Librería para construir la Interfaz de Usuario|02-02-2021|Es simple, dispone de mucha documentación y una alta testabilidad.|Desconocimiento actual sobre la librería y su funcionamiento.
 |Node.js|Lenguaje de programación en el servidor y marcos de trabajo|02-02-2021|Es sencillo y lo suficientemente versátil como para construir la aplicación entera en ambas plataformas de dispositivos.|Resulta bastante pesado con respecto a sus módulos.
+|React|Librería para construir la Interfaz de Usuario|02-02-2021|Es simple, dispone de mucha documentación y una alta testabilidad.|Desconocimiento actual sobre la librería y su funcionamiento.
 |Heroku|Repositorio remoto en el que alojar la aplicación|02-02-2021|El servicio es gratuito.|Costoso a nivel de rendimiento.
-|Docker|Desarrollo y puesta en marcha de la aplicación|02-02-2021|_Sin información_|_Sin información_
 |Leaflet|Biblioteca de gestión de mapas interactivos|09-02-2021|Código abierto, no precisa de una cuenta de Google y dispone de mucha documentación.|_Sin información_
 |===
