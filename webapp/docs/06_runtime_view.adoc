@@ -42,7 +42,7 @@ Al iniciar la aplicación el usuario debe iniciar sesión con SOLID para acceder
 . Se responde autorizando o denegando el acceso dependiendo del resultado de la autenticación
 
 
-[plantuml,"Sequence diagram",png]
+[plantuml,"Login diagram",png]
 ----
 actor Usuario
 participant Radarin
@@ -53,20 +53,46 @@ Radarin  <- Pod: Respuesta a la validación
 Usuario <- Radarin: Respuesta a la autenticación
 ----
 
+=== <Lista de amigos>
+
+La aplicación tiene una vista que implementa el CRUD de amigos.
+
+.Al acceder a esta vista se realiza el siguiente proceso:
+. El usuario entra en la aplicación y se dirige a la vista de amigos
+. El cliente recive la petición y solicita al servidor la lista de amigos
+. El servidor consulta en el POD los amigos del usuario
+. Una vez tiene los amigos, se los devuelve al cliente
+. El cliente recibe la lista y le muetra la vista al usuario
+
+
+[plantuml,"Friends diagram",png]
+----
+actor Usuario
+participant Cliente
+participant Servidor
+database Pod as "Pod del usuario"
+Usuario -> Cliente: Petición de vista de amigos
+Cliente --> Servidor: Petición de lista de amigos
+Servidor --> Pod: Consulta la lista de amigos
+Servidor <-- Pod: Responde con la lista de amigos
+Cliente <-- Servidor: Responde con la lista de amigos solicitada
+Usuario <- Cliente: Responde con la vista de amigos
+----
+
 === <Localizaciones de amigos>
 
 Una funcionalidad que ofrece la aplicación es representar la ubicación de los amigos en un mapa.
 
 .El proceso para obtener este mapa con ubicaciones es el siguiente:
-. El usuario entra en la aplicación y se dirige a la ventana de ubición de amigos
-. React recive la petición y solocita al servidor las ubicaciones de los amigos
+. El usuario entra en la aplicación y se dirige a la ventana de ubicaión de amigos
+. React recive la petición y solicita al servidor las ubicaciones de los amigos
 . El servidor consulta en el POD los amigos del usuario
 . Una vez tiene los amigos, obtiene las localizaciones de estos usuarios en la base de datos
 . El servidor recibe las ubicaciones y se las pasa al cliente
 . El cliente muestra el mapa con las ubicaciones de los amigos al usuario
 
 
-[plantuml,"Sequence diagram",png]
+[plantuml,"Location diagram",png]
 ----
 actor Usuario
 participant Cliente
