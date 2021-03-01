@@ -3,7 +3,7 @@
 == Descripción de la estrategia del problema
 Una de las piedras angulares sobre la que esta basada la aplicación es el almacenamiento descentralizado de la información del usuario. SOLID nos permite llevar a cabo esta administración de datos así que la estructura del proyecto girará en torno a él.
 
-Para desarrollar este proyecto hemos decidido usar React Native que, además de funcionar perfectamente con SOLID, permite desplegar la aplicación fácilmente tanto en Android como en iOS. 
+Para desarrollar este proyecto hemos decidido usar React Native que, además de funcionar perfectamente con SOLID, permite desplegar la aplicación fácilmente tanto en Android como en iOS.
 
 
 === Decisiones tecnológicas
@@ -12,12 +12,11 @@ Las principales librerías a usar son las siguientes:
 
 * React: Biblioteca de Javascript usada para crear el front-end de la aplicación.
 * Node.js: Se usa para crear la parte del servidor de la aplicación.
-* SOLID: Es usado a modo de base de datos descentralizada, aprovechando su fácil integración con react gracias a la librería Solid React Components.
+* MongoDB: Es usado a modo de base de datos.
 * Leaflet: Se usan los componentes que nos proporciona React-Leaflet para implementar los mapas de la aplicación.
 
 ==== Estructura
-Para conseguir que el proyecto sea mantenible su estructura estará basada en contenedores, que serán implementados usando la herramienta Docker. 
+Para conseguir que el proyecto sea mantenible su estructura estará basada en contenedores, que serán implementados usando la herramienta Docker.
 
-==== Otras decisiones 
+==== Otras decisiones
 Hemos decidido usar Github para el control de versiones. Github tambien permite poder llevar un registro del trabajo realizado por los participantes mediante los pull request.
-
