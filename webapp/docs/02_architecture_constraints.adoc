@@ -15,7 +15,7 @@
 |Restricción|Explicación
 |Fecha de entrega|El proyecto se entregará antes del fin del curso
 |Organización|El equipo se compone de 7 personas
-|Heroku|Repositorio remoto en el que se debe alojar la aplicación y su documentación
+|Heroku|Repositorio remoto en el que se debe alojar la aplicación y su documentación. Lo utilizaremos por una falta de presupuesto.
 |Git|Para facilitar el control de versiones usaremos GitHub
 |===
 
