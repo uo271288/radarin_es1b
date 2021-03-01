@@ -58,3 +58,6 @@ Se espera que la aplicación funcione en todo tipo de dispositivos: tanto a nive
 |Docker|Es un proyecto de código abierto que automatiza el despliegue de aplicaciones dentro de contenedores de software.
 |===
 
+image:3-2Diagram.png["Example Diagram"]
+image:3-2Diagram-2.png["Example Diagram"]
+
