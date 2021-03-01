@@ -6,8 +6,10 @@
 |===
 |Riesgo|Consecuencia|Solución
 |Nueva tecnología|Debemos enfrentarnos a numerosas tecnologías las cuales hasta ahora eran desconocidas.|Dedicar cierto tiempo antes de comenzar con el desarrollo para acostumbrarnos a estas.
-|Fecha de entrega|Debemos desarrollar la aplicación antes de una fecha relativamente cercana dada nuestra experiencia.|Organizarnos bien y fomentar la comunicación entre los miembros del equipo.
+|Plazo corto|Debemos desarrollar la aplicación antes de una fecha relativamente cercana dada nuestra experiencia.|Organizarnos bien y fomentar la comunicación entre los miembros del equipo.
 |No presencialidad|Debido a la situación sanitaria todo el trabajo se realiza telemáticamente y con esto se dificultan las relaciones con el resto de integrantes.|Conocernos y ser conscientes de la difícil situación, realizar reuniones periódicamente también puede ayudar a crear lazos.
 |===
 
 === Deudas técnicas
+- Lentitud de respuesta al utilizar Heroku para alojar nuestra aplicación.
+- Peor rendimiento al utilizar SOLID.
