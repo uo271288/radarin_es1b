@@ -22,21 +22,12 @@ class App extends React.Component{
   render(){
     return(
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo"/>
-          <Welcome name="ASW students"/>
-        </header>
         <AppBar />
         <div className="App-content">
-          <EmailForm refreshUsers={this.refreshUsers.bind(this)}/>
-          <UserList users={this.state.users}/>
-          <a className="App-link"
-            href="https://github.com/pglez82/radarin_0"
-            target="_blank"
-            rel="noopener noreferrer">Source code</a>
-        </div>
-        <MainRouter />
-        <BottomNav />
+
+        
+        </div><BottomNav />
+
       </div>
     )
   }

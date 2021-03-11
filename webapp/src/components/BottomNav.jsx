@@ -6,7 +6,9 @@ import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 import MapIcon from '@material-ui/icons/Map';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
-
+import Map from '../routes/Map';
+import Friends from '../routes/Friends';
+import Me from '../routes/Me';
 
 const useStyles = makeStyles({
   root: {
@@ -27,6 +29,17 @@ const BottomNav = () => {
   return (
     <div>
       <Router>
+      <Switch>
+            <Route path="/map">
+                <Map />
+            </Route>
+            <Route path="/friends">
+                <Friends />
+            </Route>
+            <Route path="/me">
+                <Me />
+            </Route>
+        </Switch>
         <BottomNavigation value={value} onChange={handleChange} showLabels className={classes.root} style={{ width: '100%', height: 'auto' }}>
           <BottomNavigationAction component={Link} to="/map" label="Mapa" value="map" icon={<MapIcon />} />
           <BottomNavigationAction component={Link} to="/friends" label="Amigos" value="friends" icon={<EmojiPeopleIcon />} />
