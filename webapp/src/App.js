@@ -5,10 +5,8 @@ import Welcome from './components/Welcome';
 import EmailForm from "./components/EmailForm";
 import UserList from "./components/UserList";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Friends from './routes/Friends';
-import Map from './routes/Map';
 import BottomNav from './components/BottomNav';
-
+import AppBar from './components/AppBar';
 
 class App extends React.Component{
   constructor(){
@@ -27,6 +25,7 @@ class App extends React.Component{
           <img src={logo} className="App-logo" alt="logo"/>
           <Welcome name="ASW students"/>
         </header>
+        <AppBar />
         <div className="App-content">
           <EmailForm refreshUsers={this.refreshUsers.bind(this)}/>
           <UserList users={this.state.users}/>
