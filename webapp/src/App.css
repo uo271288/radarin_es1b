@@ -33,7 +33,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .UserList{
@@ -53,4 +53,11 @@
   margin: auto;
   width: 50%;
   height: 50vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .leaflet-container {
+    width: 100vw;
+    height: 100vh;
+  }
 }
