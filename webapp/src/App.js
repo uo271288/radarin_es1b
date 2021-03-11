@@ -7,6 +7,7 @@ import UserList from "./components/UserList";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BottomNav from './components/BottomNav';
 import AppBar from './components/AppBar';
+import MainRouter from './routes/MainRouter';
 
 class App extends React.Component{
   constructor(){
@@ -34,7 +35,8 @@ class App extends React.Component{
             target="_blank"
             rel="noopener noreferrer">Source code</a>
         </div>
-        <BottomNav></BottomNav>
+        <MainRouter />
+        <BottomNav />
       </div>
     )
   }

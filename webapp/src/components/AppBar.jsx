@@ -23,7 +23,7 @@ export default function RadarinAppBar() {
   return (
     <div className={classes.root}>
       <AppBar position="static">
-        <Toolbar>
+        <Toolbar>         
           <Typography className={classes.title} variant="h5" noWrap>
             Radarin
           </Typography>
