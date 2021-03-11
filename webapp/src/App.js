@@ -5,6 +5,10 @@ import Welcome from './components/Welcome';
 import EmailForm from "./components/EmailForm";
 import UserList from "./components/UserList";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Friends from './routes/Friends';
+import Map from './routes/Map';
+import BottomNav from './components/BottomNav';
+
 
 class App extends React.Component{
   constructor(){
@@ -31,9 +35,14 @@ class App extends React.Component{
             target="_blank"
             rel="noopener noreferrer">Source code</a>
         </div>
+        <BottomNav></BottomNav>
       </div>
     )
   }
+
+
+
+
 }
 
 export default App;
