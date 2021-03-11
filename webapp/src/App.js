@@ -1,4 +1,4 @@
-import React from 'react';
+import React  from 'react';
 import './App.css';
 import logo from './logo.svg';
 import Welcome from './components/Welcome';
@@ -7,7 +7,7 @@ import UserList from "./components/UserList";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BottomNav from './components/BottomNav';
 import AppBar from './components/AppBar';
-import MainRouter from './routes/MainRouter';
+import { LocationsContextProvider } from './context/LocationsContext';
 
 class App extends React.Component{
   constructor(){
@@ -19,16 +19,20 @@ class App extends React.Component{
     this.setState({users:users})
   }
 
+
+
   render(){
     return(
-      <div className="App">
-        <AppBar />
-        <div className="App-content">
+      <LocationsContextProvider>
+        <div className="App">
+          <AppBar />
+          <div className="App-content">
 
-        
-        </div><BottomNav />
+          
+          </div><BottomNav />
 
-      </div>
+        </div>
+      </LocationsContextProvider>
     )
   }
 

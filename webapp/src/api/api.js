@@ -16,3 +16,15 @@ export async function getUsers(){
     let response = await fetch(apiEndPoint+'/users/list')
     return await response.json()
 }
+
+export async function getFriendsLocations(){
+    /*const apiEndPoint= process.env.REACT_APP_API_URI || 'http://localhost:5000/api'
+    console.log(apiEndPoint)
+    let response = await fetch(apiEndPoint+'/users/list')
+    return await response.json()*/
+    console.log("Pidiendo localizacionies")
+    return {'locs': [ {'altitud':51.505, 'latitud':-0.09},
+                            {'altitud':50.505, 'latitud':-1.09},
+                            {'altitud':53.505, 'latitud':-3.09}
+                        ]}
+}
