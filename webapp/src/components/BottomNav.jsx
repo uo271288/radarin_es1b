@@ -9,10 +9,13 @@ import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 import Map from '../routes/Map';
 import Friends from '../routes/Friends';
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import Me from '../routes/Me';
 
 const useStyles = makeStyles({
   root: {
-    width: 500
+    width: '100%',
+    position: 'fixed',
+    bottom: 0
   }
 });
 
@@ -34,11 +37,14 @@ const BottomNav = () => {
           <Route path="/friends">
             <Friends />
           </Route>
+          <Route path="/me">
+            <Me />
+          </Route>
         </Switch>
-      <BottomNavigation value={value} onChange={handleChange} className={classes.root} style={{ width: 'auto', height: 'auto' }}>
+      <BottomNavigation value={value} onChange={handleChange} showLabels className={classes.root} style={{ width: '100%', height: 'auto' }}>
         <BottomNavigationAction component={Link} to="/map" label="Mapa" value="map" icon={<MapIcon />} />
         <BottomNavigationAction component={Link} to="/friends" label="Amigos" value="friends" icon={<EmojiPeopleIcon />} />
-        <BottomNavigationAction component={Link} label="Perfil" value="profile" icon={<AccountCircleIcon />} />
+        <BottomNavigationAction component={Link} to="/me" label="Perfil" value="profile" icon={<AccountCircleIcon />} />
       </BottomNavigation>
       </Router>
     </div>
