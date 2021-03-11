@@ -12,8 +12,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   title: {
-    flexGrow: 1,
-    align: 'center'
+    flexGrow: 1
   }
 }));
 
@@ -23,8 +22,8 @@ export default function RadarinAppBar() {
   return (
     <div className={classes.root}>
       <AppBar position="static">
-        <Toolbar>         
-          <Typography className={classes.title} variant="h5" noWrap>
+        <Toolbar>
+          <Typography align="left" className={classes.title} variant="h5" noWrap>
             Radarin
           </Typography>
           <IconButton aria-label="display more actions" edge="end" color="inherit">
