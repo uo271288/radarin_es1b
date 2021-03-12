@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Link, Route} from "react-router-dom";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BottomNav from './components/BottomNav';
-import AppBar from './components/AppBar';
+//import AppBar  from './components/AppBar';
 import {LocationsContextProvider } from './context/LocationsContext';
 import UpdatePositionButton from './components/UpdatePositionButton';
 
@@ -19,34 +19,34 @@ import Profile from './components/profile';
 import {StartPage} from './routing';
 
 
-const AppHeader = withStyles({
-  root: {
-    flexGrow: 1,
-  },
-  grow: {
-    flexGrow: 1,
-  },
-  login: {
-    flexGrow: 1
-  }
-})(({classes}) => 
-<header className={classes.root}>
-  {/*-AppBar muestra información y acciones relacionadas con la pantalla actual , el contenedor de la barra ("nav")*/}
-  <AppBar position="static" color="default">
-    {/* Toolbar es la barra, donde se incluyen los componentes ("botones") */}
-    <Toolbar>
-      <div className={classes.grow}>
-        <Button
-            component={Link} to={"/"}>
-          {/* Typography da formato al texto*/}
-          <Typography className={classes.grow} variant="h2" component="h2" color="inherit" align= "center"> RADARIN </Typography>
-        </Button>
-      </div>
-      {/* Llama a login  */}
-      <Login/>
-    </Toolbar>
-  </AppBar>
-</header>);
+ const AppHeader = withStyles({
+   root: {
+     flexGrow: 1,
+   },
+   grow: {
+     flexGrow: 1,
+   },
+   login: {
+     flexGrow: 1
+   }
+ })(({classes}) => 
+ <header className={classes.root}>
+   {/*-AppBar muestra información y acciones relacionadas con la pantalla actual , el contenedor de la barra ("nav")*/}
+   <AppBar position="static" color="default">
+     {/* Toolbar es la barra, donde se incluyen los componentes ("botones") */}
+     <Toolbar>
+       <div className={classes.grow}>
+         <Button
+             component={Link} to={"/"}>
+           {/* Typography da formato al texto*/}
+           <Typography className={classes.grow} variant="h2" component="h2" color="inherit" align= "center"> RADARIN </Typography>
+         </Button>
+       </div>
+       {/* Llama a login  */}
+       <Login/>
+     </Toolbar>
+   </AppBar>
+ </header>);
 
 class App extends React.Component{
   constructor(){
@@ -66,13 +66,16 @@ class App extends React.Component{
     return(
 
       <div className="App">
+      {/* <AppBar /> */}
 	  <CssBaseline />
 	  <Router>
       {/*Router conjunto de componentes de navegación  */}
-        <header className="App-header">
-		       {/*<img src={logo} className="App-logo" alt="logo"/> <Welcome name="ASW students"/>*/}
+        <header className="App-header"> 
            <AppHeader/>
-        </header>
+         </header> 
+         <LocationsContextProvider>
+        <BottomNav />
+        </LocationsContextProvider>
 		    <main>
               {/*Route, enlace a la ruta indica que en StartPage en la direcion / se vera el contenido de la clase StartPage  */}
               <Route exact path="/" component={StartPage}/>
@@ -83,6 +86,9 @@ class App extends React.Component{
                 return <Profile webId={params.webId}/>
               }}/>
         </main>
+        
+        
+        
     {/*<LocationsContextProvider>
           <AppBar />
           <UpdatePositionButton />
