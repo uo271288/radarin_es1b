@@ -9,6 +9,7 @@ import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 import Map from '../routes/Map';
 import Friends from '../routes/Friends';
 import Me from '../routes/Me';
+import { StartPage } from '../routing';
 
 const useStyles = makeStyles({
   root: {
