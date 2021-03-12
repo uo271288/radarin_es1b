@@ -1,10 +1,11 @@
 import React from 'react';
 import {BrowserRouter as Router, Link, Route} from "react-router-dom";
 import './App.css';
-import Welcome from './components/Welcome';
-import EmailForm from "./components/EmailForm";
-import UserList from "./components/UserList";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import BottomNav from './components/BottomNav';
+import AppBar from './components/AppBar';
+import {LocationsContextProvider } from './context/LocationsContext';
+import UpdatePositionButton from './components/UpdatePositionButton';
 
 import * as qs from 'query-string';
 import {withStyles} from '@material-ui/core/styles';
@@ -56,15 +57,14 @@ class App extends React.Component{
       
     }
   }
-
-  
   refreshUsers(users){
     {/* refresca los users al registrar uno nuevo*/}
     this.setState({users:users})
-  }
-
+  };
   render(){
+
     return(
+
       <div className="App">
 	  <CssBaseline />
 	  <Router>
@@ -83,10 +83,25 @@ class App extends React.Component{
                 return <Profile webId={params.webId}/>
               }}/>
         </main>
+    {/*<LocationsContextProvider>
+          <AppBar />
+          <UpdatePositionButton />
+          <div className="App-content">
+
+          
+          </div><BottomNav />
+
+        </div>
+      </LocationsContextProvider>*/}
 	  </Router>
       </div>
+
     )
   }
+
+
+
+
 }
 
 export default App;

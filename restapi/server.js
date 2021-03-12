@@ -4,9 +4,12 @@ const cors = require('cors');
 const mongoose = require("mongoose")
 const api = require("./api") 
 
+const  mongoAtlasUri =
+        "mongodb+srv://radarinUser:6F!R5ypwtLTMytm@cluster0.3a2e0.mongodb.net/radarin?retryWrites=true&w=majority";
+       
 function connect(){
     //The MONGO_URI variable is the connection string to MongoDB Atlas (for production). This env variable is created in heroku.
-    mongo_uri = process.env.MONGO_URI || "mongodb://localhost:27017"
+    mongo_uri = mongoAtlasUri || process.env.MONGO_URI || "mongodb://localhost:27017"
     mongoose.connect(mongo_uri, { useNewUrlParser: true,useUnifiedTopology: true }).then(() => {
         const app = express()
 
