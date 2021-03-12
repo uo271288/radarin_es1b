@@ -1,13 +1,10 @@
-import React  from 'react';
+import React from 'react';
 import './App.css';
-import logo from './logo.svg';
-import Welcome from './components/Welcome';
-import EmailForm from "./components/EmailForm";
-import UserList from "./components/UserList";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BottomNav from './components/BottomNav';
 import AppBar from './components/AppBar';
-import { LocationsContextProvider } from './context/LocationsContext';
+import {LocationsContextProvider } from './context/LocationsContext';
+import UpdatePositionButton from './components/UpdatePositionButton';
 
 class App extends React.Component{
   constructor(){
@@ -17,15 +14,18 @@ class App extends React.Component{
 
   refreshUsers(users){
     this.setState({users:users})
-  }
+  };
 
 
+  
 
   render(){
+
     return(
       <LocationsContextProvider>
         <div className="App">
           <AppBar />
+          <UpdatePositionButton />
           <div className="App-content">
 
           

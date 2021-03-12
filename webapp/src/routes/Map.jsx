@@ -5,6 +5,7 @@ import {getFriendsLocations} from '../api/api';
 
 const Map = (props) => {
     const {locations, setLocations} = useContext(LocationsContext);
+    const {position, setPosition} = useContext(LocationsContext);
 
     useEffect( () => {
         const fetchData = async () => {
