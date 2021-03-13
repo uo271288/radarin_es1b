@@ -9,7 +9,8 @@ import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 import Map from '../routes/Map';
 import Friends from '../routes/Friends';
 import Me from '../routes/Me';
-import { StartPage } from '../routing';
+import Start from '../routes/StartPage';
+ 
 
 const useStyles = makeStyles({
   root: {
@@ -39,6 +40,9 @@ const BottomNav = () => {
             </Route>
             <Route path="/me">
                 <Me />
+            </Route>
+            <Route path="/">
+                <Start />
             </Route>
         </Switch>
         <BottomNavigation value={value} onChange={handleChange} showLabels className={classes.root} style={{ width: '100%', height: 'auto' }}>
