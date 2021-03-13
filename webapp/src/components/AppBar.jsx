@@ -5,10 +5,15 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import MoreIcon from '@material-ui/icons/MoreVert';
+import Button from '@material-ui/core/Button';
+import {BrowserRouter as Router, Link, Route} from "react-router-dom";
+import Login from './login';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
     margin: "auto",
+    flexGrow: 1
   },
 
   title: {
@@ -20,17 +25,20 @@ export default function RadarinAppBar() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <header className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <Typography align="left" className={classes.title} variant="h5" noWrap>
-            Radarin
-          </Typography>
+          <div className={classes.title} align="left">
+          <Button color="inherit" component={Link} to={"/"}>
+            {/* Typography da formato al texto*/}
+             <Typography align="left" className={classes.title} variant="h5" color="inherit"  noWrap> Radarin </Typography>
+          </Button> 
+          </div>
           <IconButton aria-label="display more actions" edge="end" color="inherit">
-            <MoreIcon />
+            <Login />
           </IconButton>
         </Toolbar>
       </AppBar>
-    </div>
+    </header>
   );
 }

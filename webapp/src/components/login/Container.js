@@ -27,7 +27,7 @@ export default ({fullName, imageSrc, webId}) => {
           <LoginBadge webId={webId} fullName={fullName ? fullName.toString() : undefined} imageSrc={imageSrc ? imageSrc.toString() : undefined} />
         </LoggedIn>
         {/* Boton para iniciar sesion en solid , muestra el boton de log in o log out dependiendo del estado del usuario */}
-        <Button variant="contained" color="primary" component={AuthButtonComponent} popup={popupUri}>
+        <Button  variant="contained" color="primary" edge="end" component={AuthButtonComponent} popup={popupUri}>
           ...
         </Button>
     </span>;
