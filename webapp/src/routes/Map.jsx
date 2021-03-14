@@ -17,11 +17,19 @@ const Map = (props) => {
               setPosition(e.latlng)
               map.flyTo(e.latlng, map.getZoom())
               setPosition(e.latlng)
-              console.log(position)
+              console.log(position);
+
             },
           })
 
-          return null
+          return (
+            <Marker position={position}>
+            <Popup>
+            Localizacion del usuario <br /> Easily customizable.
+            </Popup>
+            </Marker>
+        )             
+          
     }
 
 
