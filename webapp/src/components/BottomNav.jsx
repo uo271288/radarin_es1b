@@ -10,6 +10,7 @@ import Map from '../routes/Map';
 import Friends from '../routes/Friends';
 import Me from '../routes/Me';
 import Start from '../routes/StartPage';
+import Home from '@material-ui/icons/Home'
 
 
 const useStyles = makeStyles({
@@ -45,6 +46,7 @@ const BottomNav = () => {
         </Route>
       </Switch>
       <BottomNavigation value={value} onChange={handleChange} showLabels className={classes.root} style={{ width: '100%', height: 'auto' }}>
+        <BottomNavigationAction component={Link} to="/" label="Inicio" value="" icon={<Home/>}/>
         <BottomNavigationAction component={Link} to="/map" label="Mapa" value="map" icon={<MapIcon />} />
         <BottomNavigationAction component={Link} to="/friends" label="Amigos" value="friends" icon={<EmojiPeopleIcon />} />
         <BottomNavigationAction component={Link} to="/me" label="Perfil" value="profile" icon={<AccountCircleIcon />} />

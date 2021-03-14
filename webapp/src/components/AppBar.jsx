@@ -3,10 +3,8 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
-import MoreIcon from '@material-ui/icons/MoreVert';
-import Button from '@material-ui/core/Button';
-import {BrowserRouter as Router, Link, Route} from "react-router-dom";
+import { makeStyles, ThemeProvider } from '@material-ui/core/styles';
+import { createMuiTheme } from '@material-ui/core/styles';
 import Login from './login';
 
 
@@ -29,10 +27,8 @@ export default function RadarinAppBar() {
       <AppBar position="static">
         <Toolbar>
           <div className={classes.title} align="left">
-          <Button color="inherit" component={Link} to={"/"}>
             {/* Typography da formato al texto*/}
-             <Typography align="left" className={classes.title} variant="h5" color="inherit"  noWrap> Radarin </Typography>
-          </Button> 
+            <Typography align="left" className={classes.title} variant="h5" color="inherit" noWrap> Radarin </Typography>
           </div>
           <IconButton aria-label="display more actions" edge="end" color="inherit">
             <Login />
