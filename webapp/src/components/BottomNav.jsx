@@ -10,7 +10,7 @@ import Map from '../routes/Map';
 import Friends from '../routes/Friends';
 import Me from '../routes/Me';
 import Start from '../routes/StartPage';
- 
+
 
 const useStyles = makeStyles({
   root: {
@@ -30,27 +30,25 @@ const BottomNav = () => {
 
   return (
     <div>
-      <Router>
       <Switch>
-            <Route path="/map">
-                <Map />
-            </Route>
-            <Route path="/friends">
-                <Friends />
-            </Route>
-            <Route path="/me">
-                <Me />
-            </Route>
-            <Route path="/">
-                <Start />
-            </Route>
-        </Switch>
-        <BottomNavigation value={value} onChange={handleChange} showLabels className={classes.root} style={{ width: '100%', height: 'auto' }}>
-          <BottomNavigationAction component={Link} to="/map" label="Mapa" value="map" icon={<MapIcon />} />
-          <BottomNavigationAction component={Link} to="/friends" label="Amigos" value="friends" icon={<EmojiPeopleIcon />} />
-          <BottomNavigationAction component={Link} to="/me" label="Perfil" value="profile" icon={<AccountCircleIcon />} />
-        </BottomNavigation>
-      </Router>
+        <Route path="/map">
+          <Map />
+        </Route>
+        <Route path="/friends">
+          <Friends />
+        </Route>
+        <Route path="/me">
+          <Me />
+        </Route>
+        <Route path="/">
+          <Start />
+        </Route>
+      </Switch>
+      <BottomNavigation value={value} onChange={handleChange} showLabels className={classes.root} style={{ width: '100%', height: 'auto' }}>
+        <BottomNavigationAction component={Link} to="/map" label="Mapa" value="map" icon={<MapIcon />} />
+        <BottomNavigationAction component={Link} to="/friends" label="Amigos" value="friends" icon={<EmojiPeopleIcon />} />
+        <BottomNavigationAction component={Link} to="/me" label="Perfil" value="profile" icon={<AccountCircleIcon />} />
+      </BottomNavigation>
     </div>
   );
 };

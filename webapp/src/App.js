@@ -11,7 +11,6 @@ import * as qs from 'query-string';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Profile from './components/profile';
 import {StartPage} from './routing';
-import {Friends} from './routes/MainRouter';
 
 
 
