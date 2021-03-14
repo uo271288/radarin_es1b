@@ -5,7 +5,7 @@ const mongoose = require("mongoose")
 const api = require("./api") 
 
 const  mongoAtlasUri =
-        "mongodb+srv://radarinUser:6F!R5ypwtLTMytm@cluster0.3a2e0.mongodb.net/radarin?retryWrites=true&w=majority";
+        "mongodb+srv://mongouser:arquisoft2021.@radarines1b.ncj1c.mongodb.net/radarines1b?retryWrites=true&w=majority";
        
 function connect(){
     //The MONGO_URI variable is the connection string to MongoDB Atlas (for production). This env variable is created in heroku.
