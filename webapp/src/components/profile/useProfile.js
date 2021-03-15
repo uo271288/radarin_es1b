@@ -1,7 +1,7 @@
-import {useLDflex} from "@solid/react";
+import { useLDflex, useWebId } from "@solid/react";
 
 export default (webId) => {
-    
+
     //WebId es la direccion del perfil de solid logueado
     //Hace consultas a la información del perfil de solid
     //name es el nombre de del perfil
@@ -13,8 +13,10 @@ export default (webId) => {
     const [photo, photoPending, photoError] = useLDflex(`[${webId}].vcard_hasPhoto`);
     const pending = namePending || imagePending || fnPending || photoPending;
     const error = nameError || imageError || fnError || photoError;
+    const loggedUser = useWebId();
     return {
         webId,
+        loggedUserWebID: loggedUser,
         pending,
         error,
         fullName: name || fn,
