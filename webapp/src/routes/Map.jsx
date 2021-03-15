@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from 'react'
 import { MapContainer, TileLayer, Marker, Popup, useMapEvents, useMap } from 'react-leaflet';
 import { LocationsContext } from '../context/LocationsContext';
-import { getFriendsLocations } from '../api/api';
+import { addLocation, getFriendsLocations } from '../api/api';
 import { latLng } from 'leaflet';
 
 const Map = (props) => {
@@ -16,9 +16,9 @@ const Map = (props) => {
             locationfound(e) {
                 setPosition(e.latlng)
                 map.flyTo(e.latlng, map.getZoom())
-                setPosition(e.latlng)
-                console.log(position);
-
+                console.log("Posición del user:"+ position);
+                const response = addLocation("user", position);
+                console.log(response)
             },
         })
 
@@ -33,12 +33,7 @@ const Map = (props) => {
         }else{
             return null;
         }
-
-
     }
-
-
-
 
     useEffect(() => {
         const fetchData = async () => {
