@@ -7,7 +7,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import Button from '@material-ui/core/Button';
 import {BrowserRouter as Router, Link, Route} from "react-router-dom";
-import Login from './Login';
+import Login from './login';
 
 const useStyles = makeStyles((theme) => ({
   root: {
