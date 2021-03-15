@@ -4,8 +4,8 @@ export const LocationsContext = createContext();
 
 export const LocationsContextProvider = (props) => {
     const [locations, setLocations] = useState([]);
-    const [position, setPosition] = useState();
-    
+    const [position, setPosition] = useState();    
+    const [userId, setUserId] = useState();
 
     return (
         <LocationsContext.Provider value={{locations, setLocations, position, setPosition}}>

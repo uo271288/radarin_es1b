@@ -1,16 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BottomNav from './components/BottomNav';
 import AppBar from './components/AppBar';
-import { LocationsContextProvider } from './context/LocationsContext';
-import UpdatePositionButton from './components/UpdatePositionButton';
+import { LocationsContext, LocationsContextProvider } from './context/LocationsContext';
 
 import * as qs from 'query-string';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Profile from './components/profile';
-import { StartPage } from './routing';
 
 
 
@@ -23,10 +21,10 @@ class App extends React.Component {
 
     }
   }
-  refreshUsers(users) {
-    {/* refresca los users al registrar uno nuevo*/ }
-    this.setState({ users: users })
-  };
+
+
+
+  
   render() {
 
     return (
@@ -47,6 +45,7 @@ class App extends React.Component {
               {/* En webId lo que le pasa en la direccion del perfil de solid */}
               <Route path="/profile/" render={({ location }) => {
                 const params = qs.parse(location.search);
+                //SaveWebId(params.webId)
                 return <Profile webId={params.webId} />
               }} />
             </main>
