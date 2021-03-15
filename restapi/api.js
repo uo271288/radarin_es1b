@@ -36,13 +36,15 @@ router.post("/location/add", async (req, res) => {
     // If it exists, then we'll update it
     if (newEntry) {
         id = newEntry._id;
-        newEntry.findByIdAndUpdate({ id }, { "location": location }, function(err, result) {
+        console.log(id);
+        console.log(newEntry);
+/*         newEntry.findByIdAndUpdate({ id }, { "location": location }, function(err, result) {
             if (err) {
                 res.send(err);
             } else {
                 res.send(result);
             }
-        });
+        }); */
     } else {
         newEntry = new Location({
             user: user,

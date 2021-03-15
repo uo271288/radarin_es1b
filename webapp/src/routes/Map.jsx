@@ -17,7 +17,7 @@ const Map = (props) => {
                 setPosition(e.latlng)
                 map.flyTo(e.latlng, map.getZoom())
                 console.log("Posición del user:"+ position);
-                const response = addLocation("user", position);
+                const response = addLocation("user", [e.latlng.lat, e.latlng.lng]);
                 console.log(response)
             },
         })
