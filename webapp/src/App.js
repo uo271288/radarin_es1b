@@ -9,7 +9,7 @@ import { LocationsContext, LocationsContextProvider } from './context/LocationsC
 import * as qs from 'query-string';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Profile from './components/profile';
-import NavBar2 from './components/NavBar2';
+import NavBar from './components/NavBar';
 
 
 
@@ -52,7 +52,7 @@ class App extends React.Component {
             </main>
 
 
-            <NavBar2 />
+            <NavBar />
           </Router>
         </LocationsContextProvider>
       </div>
