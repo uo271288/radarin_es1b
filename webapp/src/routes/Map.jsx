@@ -52,7 +52,7 @@ const Map = (props) => {
             <h1>Localizacines de los amigos</h1>
 
             <div>
-                <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
+                <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={true}>
                     <MyMapEvent />
                     <TileLayer
                         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
