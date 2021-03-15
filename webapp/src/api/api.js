@@ -17,6 +17,16 @@ export async function getUsers(){
     return await response.json()
 }
 
+export async function addLocation(webId,location){
+    const apiEndPoint= process.env.REACT_APP_API_URI || 'http://localhost:5000/api'
+    let response = await fetch(apiEndPoint+'/location/add', {
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({'user':webId, 'location':location})
+      })
+    return await response.json()
+}
+
 export async function getFriendsLocations(){
     /*const apiEndPoint= process.env.REACT_APP_API_URI || 'http://localhost:5000/api'
     console.log(apiEndPoint)
