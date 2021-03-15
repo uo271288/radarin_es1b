@@ -11,10 +11,7 @@ import Friends from '../routes/Friends';
 import Me from '../routes/Me';
 import Start from '../routes/StartPage';
 import Home from '@material-ui/icons/Home'
-import Profile from './profile/Profile';
-import { useLDflex, useWebId } from "@solid/react";
-import FriendList from './friendList/FriendList';
-import profile from './profile';
+import Profile from './profile';
 
 
 const useStyles = makeStyles({
@@ -25,11 +22,7 @@ const useStyles = makeStyles({
   }
 });
 
-
-
-
 const BottomNav = (props) => {
-
   const classes = useStyles();
   const [value, setValue] = React.useState('recents');
 
@@ -44,10 +37,10 @@ const BottomNav = (props) => {
           <Map />
         </Route>
         <Route path="/friends">
-          <FriendList />
+          <Friends />
         </Route>
         <Route path="/me">
-          <profile />
+          <Profile webId={props.webId} />
         </Route>
         <Route path="/">
           <Start />
