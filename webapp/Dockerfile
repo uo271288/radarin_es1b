@@ -8,9 +8,6 @@ RUN npm install --production
 ARG API_URI="http://localhost:5000/api"
 ENV REACT_APP_API_URI=$API_URI
 #Create an optimized version of the webapp
-RUN npm cache clean --force
-RUN rm -rf node_modules
-RUN npm install
 RUN npm run build
 #Install software neccesary for generating the doc
 RUN apt-get update && apt-get -y install ruby openjdk-8-jre
