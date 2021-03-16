@@ -8,10 +8,6 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 
-import {Link} from "react-router-dom";
-
-import toProfile from "./toProfile";
-
 import { makeStyles } from '@material-ui/core/styles';
 
 //Parte de creación de la interfaz grafica de la página principal , emplea distintos Layaouts

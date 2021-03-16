@@ -1,8 +1,7 @@
 import React, { useEffect, useContext } from 'react'
-import { MapContainer, TileLayer, Marker, Popup, useMapEvents, useMap } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from 'react-leaflet';
 import { LocationsContext } from '../context/LocationsContext';
 import { addLocation, getFriendsLocations } from '../api/api';
-import { latLng } from 'leaflet';
 
 const Map = (props) => {
     const { locations, setLocations } = useContext(LocationsContext);

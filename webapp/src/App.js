@@ -1,10 +1,9 @@
-import React, { useContext } from 'react';
-import { BrowserRouter as Router, Link, Route } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import BottomNav from './components/BottomNav';
 import AppBar from './components/AppBar';
-import { LocationsContext, LocationsContextProvider } from './context/LocationsContext';
+import { LocationsContextProvider } from './context/LocationsContext';
 
 import * as qs from 'query-string';
 import CssBaseline from '@material-ui/core/CssBaseline';

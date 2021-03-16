@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { Route, Switch, Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
@@ -8,7 +8,6 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 import Map from '../routes/Map';
 import Friends from '../routes/Friends';
-import Me from '../routes/Me';
 import Start from '../routes/StartPage';
 import Home from '@material-ui/icons/Home'
 import Profile from './profile';
