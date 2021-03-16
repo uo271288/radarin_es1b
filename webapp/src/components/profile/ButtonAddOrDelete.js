@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
-import { useLDflexValue, useLDflexList } from '@solid/react';
-import { Component } from 'react';
+import { useLDflexList } from '@solid/react';
 
-import { Button, ListItemSecondaryAction } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 
-import { Value, Image, List } from '@solid/react';
 
 
 
@@ -48,8 +46,8 @@ async function getFriends(friends){
 export default  function ButtonAddOrDelete (props) {
 
 
-    const [webId, setWebID] = useState( props.webId );
-    const [loggedUser, setLoggedUser] = useState( props.loggedUser );
+    const [webId] = useState( props.webId );
+    const [loggedUser] = useState( props.loggedUser );
 
     
     const friends =   getFriends(useLDflexList("["+webId+"]"+'.friends') ).then((item)=> {return item;});

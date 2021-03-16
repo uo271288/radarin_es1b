@@ -15,7 +15,7 @@ import NavBar from './components/NavBar';
 class App extends React.Component {
   constructor() {
     super()
-    {/* array para almacenar los usuarios conectados*/ }
+    /* array para almacenar los usuarios conectados*/ 
     this.state = {
       users: []
 

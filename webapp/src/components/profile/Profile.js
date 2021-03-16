@@ -9,7 +9,6 @@ import ButtonFriendship from './ButtonFriendship'
 import Paper from "@material-ui/core/Paper";
 
 import styles from "./Profile.module.css";
-import { Button } from '@material-ui/core';
 
 
 //default inicializa a default los valores de los parametros si no se los has pasado explicitamente
