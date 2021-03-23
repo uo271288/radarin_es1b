@@ -6,7 +6,7 @@
 |===
 |Restricción|Explicación
 |SOLID|Se seguirán las especificaciones SOLID durante el desarrollo del proyecto
-|Docker|Se utilizará la herramienta Docker para la descentralización de los datos
+|Docker|Se utilizará la herramienta Docker para desplegar la aplicación
 |===
 
 === Restricciones organizativas

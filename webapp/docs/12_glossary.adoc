@@ -9,4 +9,5 @@
 | W3C    | World Wide Web Consortium (Estándares para las páginas web)
 | Hooks  | API de React que permite asignar estados y otras características de React a los componentes de la aplicación, sin necesidad de construir clases expresamente para ello 
 | MVC | Modelo-Vista-Controlador. Patrón arquitectónico de diseño de software que divide la aplicación en tres grandes capas: una destinada a la lógica de negocio (Modelo); una destinada a la interfaz de usuario (Vista) y una capa intermedia que captura la interacción del usuario, realiza las operaciones necesarias en la lógica de negocio y lo refleja en la vista (Controlador).
+| W3C | World Wide Web Consortium. Comunidad internacional dedicada al desarrollo de estándares y especificaciones web con el objetivo de garantizar que los desarrolladores construyan sitios web de calidad accesibles para todo tipo de usuarios.
 |===

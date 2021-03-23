@@ -1,5 +1,5 @@
 import React from 'react';
-import {evaluateExpressions, useWebId} from '@solid/react';
+import {useWebId} from '@solid/react';
 
 import LoginContainer from './Container';
 import useProfile from "../profile/useProfile";

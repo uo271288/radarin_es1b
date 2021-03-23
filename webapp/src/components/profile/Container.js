@@ -19,6 +19,7 @@ export default class ProfileContainer extends Component {
           webId={this.props.webId}
           fullName={string(this.props.fullName)}
           imageSrc={string(this.props.imageSrc)}
+          loggedUser={string(this.props.loggedUserWebID)}
       />}
     </div>
   }

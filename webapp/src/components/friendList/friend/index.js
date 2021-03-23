@@ -1,6 +1,5 @@
 import React from "react";
 
-import {useLDflex} from "@solid/react";
 import FriendContainer from './Container'
 import useProfile from "../../profile/useProfile";
 

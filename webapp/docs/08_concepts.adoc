@@ -29,9 +29,8 @@ Toda la información del usuario se encuentra almacenada en PODS, de manera que 
 === Patrones de diseño y Arquitectura
 
 La arquitectura que se empleará es MVC (Modelo Vista Controlador). 
-Para la aplicación móvil se empleará React Native.
-Los patrones de diseño aún no se han especificado más allá de este;
-estas decisiones, que pueden variar, aún no han sido tomadas en su totalidad debido a la temprana fase del proyecto en la que nos encontramos.
+Para la aplicación creada en con React sera adaptable a dispositivos moviles.
+
 
 
 

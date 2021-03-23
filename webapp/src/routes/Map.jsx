@@ -1,8 +1,7 @@
 import React, { useEffect, useContext } from 'react'
-import { MapContainer, TileLayer, Marker, Popup, useMapEvents, useMap } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from 'react-leaflet';
 import { LocationsContext } from '../context/LocationsContext';
 import { addLocation, getFriendsLocations } from '../api/api';
-import { latLng } from 'leaflet';
 
 const Map = (props) => {
     const { locations, setLocations } = useContext(LocationsContext);
@@ -17,7 +16,7 @@ const Map = (props) => {
                 setPosition(e.latlng)
                 map.flyTo(e.latlng, map.getZoom())
                 console.log("Posición del user:"+ position);
-                const response = addLocation("user", [e.latlng.lat, e.latlng.lng]);
+                const response = addLocation(props.webId, [e.latlng.lat, e.latlng.lng]);
                 console.log(response)
             },
         })
@@ -26,7 +25,7 @@ const Map = (props) => {
             return (
                 <Marker position={position}>
                     <Popup>
-                        Localizacion del usuario <br /> Easily customizable.
+                        Ubicación del usuario <br />
                 </Popup>
                 </Marker>
             )
@@ -49,10 +48,10 @@ const Map = (props) => {
 
     return (
         <div style={{ marginBottom: 10, position: 'relative' }}>
-            <h1>Localizacines de los amigos</h1>
+            <h1>Ubicación del usuario</h1>
 
             <div>
-                <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={true}>
+                <MapContainer center={[43.36, -5.90]} zoom={10} scrollWheelZoom={true}>
                     <MyMapEvent />
                     <TileLayer
                         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'

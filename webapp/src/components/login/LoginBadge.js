@@ -14,7 +14,7 @@ export default ({fullName, imageSrc, webId}) =>
   <Tooltip title={webId || '...'}>
     <Chip
         className={styles.badge} //añade un margen a la etiqueta 
-        label={fullName ? `Conectado como ${fullName}` : 'Conectado'} //mensaje del boton de acceso al perfil una vez 
+        label={fullName ? `${fullName}` : 'Conectado'} //mensaje del boton de acceso al perfil una vez 
         avatar={<Image name={fullName || webId} src={imageSrc}/>} //imagen del avatar del boton
         component={Link} to={toProfile(webId)} clickable // indica que al pulsar en el boton nos redirigue a el perfil del usuario
     />

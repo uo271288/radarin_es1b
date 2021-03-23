@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { Route, Switch, Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
@@ -8,9 +8,9 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 import Map from '../routes/Map';
 import Friends from '../routes/Friends';
-import Me from '../routes/Me';
 import Start from '../routes/StartPage';
 import Home from '@material-ui/icons/Home'
+import Profile from './profile';
 
 
 const useStyles = makeStyles({
@@ -21,7 +21,7 @@ const useStyles = makeStyles({
   }
 });
 
-const BottomNav = () => {
+const BottomNav = (props) => {
   const classes = useStyles();
   const [value, setValue] = React.useState('recents');
 
@@ -33,13 +33,13 @@ const BottomNav = () => {
     <div>
       <Switch>
         <Route path="/map">
-          <Map />
+          <Map webId={props.webId}/>
         </Route>
         <Route path="/friends">
           <Friends />
         </Route>
         <Route path="/me">
-          <Me />
+          <Profile webId={props.webId} />
         </Route>
         <Route path="/">
           <Start />
