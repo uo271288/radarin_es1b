@@ -31,6 +31,8 @@ router.post("/users/add", async (req, res) => {
 router.post("/location/add", async (req, res) => {
     let user = req.body.user;
     let location = req.body.location;
+    let state = req.body.state;
+    let country = req.body.country;
     // Check if the user is already in the db
     let newEntry = await Location.findOne({ user: user });
     // If it exists, then we'll update it
@@ -48,7 +50,9 @@ router.post("/location/add", async (req, res) => {
     } else {
         newEntry = new Location({
             user: user,
-            location: location
+            location: location,
+            state: state,
+            country: country
         });
 
         await newEntry.save();

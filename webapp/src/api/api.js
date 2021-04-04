@@ -17,12 +17,17 @@ export async function getUsers(){
     return await response.json()
 }
 
-export async function addLocation(webId,location){
+export async function addLocation(webId,location,state,country){
     const apiEndPoint= process.env.REACT_APP_API_URI || 'http://localhost:5000/api'
     let response = await fetch(apiEndPoint+'/location/add', {
         method: 'POST',
         headers: {'Content-Type':'application/json'},
-        body: JSON.stringify({'user':webId, 'location':location})
+        body: JSON.stringify({
+            'user':webId, 
+            'location':location,
+            'state':state,
+            'country':country
+        })
       })
     return await response.json()
 }
