@@ -43,3 +43,9 @@ export async function getFriendsLocations(){
                             {'altitud':53.505, 'latitud':-3.09}
                         ]}
 }
+
+export async function getFriends(webId){
+    const apiEndPoint= process.env.REACT_APP_API_URI || 'http://localhost:5000/api'
+    let response = await fetch(apiEndPoint+'/friends/list/'+webId+'?user='+webId)
+    return await response.json()
+}

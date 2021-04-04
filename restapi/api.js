@@ -1,6 +1,7 @@
 const express = require("express")
 const User = require("./models/users")
 const Location = require("./models/locations")
+const Friend = require("./models/friends")
 const router = express.Router()
 
 // Get all users
@@ -60,5 +61,41 @@ router.post("/location/add", async (req, res) => {
         res.send(newEntry);
     }
 });
+
+// get friends
+router.get("/friends/list/:id", async (req, res) => {
+
+    const userWebId = req.params.user
+    console.log(req.params)
+    console.log("Primer usr:"+userWebId)
+    var query = { $or: [ 
+        { "requester": userWebId, "status": "accepted"  },
+        { "target": userWebId, "status": "accepted" }
+    ]};
+    
+    var friends =  await Friend.find((query, function(err, docs) {
+        if (err) {
+            console.log("Error al encontrar los amigos");
+        } else {
+            console.log(docs);
+            console.log(userWebId);
+            return docs;
+        }
+    }))
+    console.log(userWebId);
+    var users = friends.map(function(elem) {
+        console.log(userWebId);
+        return (elem.target == userWebId)?elem.requester : elem.target;
+    }, this)
+    console.log("Amigos:"+ users)
+
+    await User.find({'webId' : { $in: users}}, function(err, docs){
+        if(err) {
+            console.log("Error al encontrar los usuarios dados los amigos")
+        } else {
+            res.send(docs);
+        }
+    })
+})
 
 module.exports = router

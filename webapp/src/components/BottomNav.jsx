@@ -7,7 +7,7 @@ import MapIcon from '@material-ui/icons/Map';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 import Map from './map/Map';
-import Friends from '../routes/Friends';
+import Friends from './friends/Friends';
 import Start from '../routes/StartPage';
 import Home from '@material-ui/icons/Home'
 import Profile from './profile';

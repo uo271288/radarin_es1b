@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "react-geocode": "^0.2.3"
+    "react-geocode": "^0.2.3",
+    "react-swipeable-views": "^0.13.9"
   }
 }

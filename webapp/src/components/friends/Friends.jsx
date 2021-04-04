@@ -1,6 +1,5 @@
 import React from 'react'
 import FriendsTabs from './FriendsTabs'
-import 
 
 const Friends = () => {
     return (

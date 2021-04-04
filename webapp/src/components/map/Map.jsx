@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from 'react'
 import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from 'react-leaflet';
 import { LocationsContext } from '../../context/LocationsContext';
-import { addLocation, getFriendsLocations } from '../../api/api';
+import { addLocation, getFriendsLocations, getFriends } from '../../api/api';
 import Geocode from "react-geocode";
 
 Geocode.setApiKey("AIzaSyC6fKABMEcc3viILCEmzr9Uy7pToGhbVv0");
@@ -61,6 +61,8 @@ const Map = (props) => {
                   props.webId, [latlng.lat, latlng.lng],
                   state, country);
               console.log(apicall)
+              const friends = getFriends(props.webId);
+              console.log(friends)
             },
             (error) => {
               console.log("No se ha podido guardar la localización")
