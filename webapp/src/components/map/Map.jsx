@@ -1,9 +1,8 @@
 import React, { useEffect, useContext } from 'react'
 import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from 'react-leaflet';
-import { LocationsContext } from '../context/LocationsContext';
-import { addLocation, getFriendsLocations } from '../api/api';
+import { LocationsContext } from '../../context/LocationsContext';
+import { addLocation, getFriendsLocations } from '../../api/api';
 import Geocode from "react-geocode";
-
 
 Geocode.setApiKey("AIzaSyC6fKABMEcc3viILCEmzr9Uy7pToGhbVv0");
 Geocode.setLanguage("en");
@@ -68,11 +67,6 @@ const Map = (props) => {
               console.error(error);
             }
         );
-    }
-
-    async function getFriends(friends){ 
-        const friendsValue=  await friends;
-        return friendsValue;
     }
 
     useEffect(() => {
