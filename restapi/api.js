@@ -37,16 +37,17 @@ router.post("/location/add", async (req, res) => {
     let newEntry = await Location.findOne({ user: user });
     // If it exists, then we'll update it
     if (newEntry) {
-        id = newEntry._id;
-        console.log(id);
-        console.log(newEntry);
-/*         newEntry.findByIdAndUpdate({ id }, { "location": location }, function(err, result) {
+        var query = { "_id" : newEntry._id };
+        newEntry.location = location;
+        newEntry.state = state;
+        newEntry.country = country;
+        await Location.findOneAndUpdate(query, newEntry, function(err, doc) {
             if (err) {
-                res.send(err);
+                console.log("Something wrong when updating data!");
             } else {
-                res.send(result);
+                console.log(doc);
             }
-        }); */
+        });
     } else {
         newEntry = new Location({
             user: user,
