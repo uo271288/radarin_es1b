@@ -6,8 +6,7 @@ const Friends = () => {
         <div>
             <h1>Amigoos</h1>
             <p>To be done: Vista para buscar usuarios</p>
-            <FriendsTabs /> 
-            <List></List>           
+            <FriendsTabs />         
         </div>
     )
 }
