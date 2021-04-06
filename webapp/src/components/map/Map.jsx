@@ -4,7 +4,7 @@ import { LocationsContext } from '../../context/LocationsContext';
 import { addLocation, getFriendsLocations, getFriends } from '../../api/api';
 import Geocode from "react-geocode";
 
-Geocode.setApiKey("AIzaSyC6fKABMEcc3viILCEmzr9Uy7pToGhbVv0");
+Geocode.setApiKey(process.env.GEOCODE_KEY);
 Geocode.setLanguage("en");
 Geocode.setRegion("es");
 Geocode.setLocationType("ROOFTOP");
