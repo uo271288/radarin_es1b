@@ -62,40 +62,39 @@ router.post("/location/add", async (req, res) => {
     }
 });
 
-// get friends
-router.get("/friends/list/:id", async (req, res) => {
+// get friends locations
+router.post("/friends/locations/", async (req, res) => {
 
-    const userWebId = req.params.user
-    console.log(req.params)
-    console.log("Primer usr:"+userWebId)
-    var query = { $or: [ 
-        { "requester": userWebId, "status": "accepted"  },
-        { "target": userWebId, "status": "accepted" }
-    ]};
+    const userWebId = req.body.webId
+    var query = { $and: [ 
+        { $or: [ 
+            { "requester": userWebId},
+            { "target": userWebId }
+        ]},
+        { "status": "accepted"}
+       ]};
     
-    var friends =  await Friend.find((query, function(err, docs) {
+    Friend.find().and(query).exec( function(err, docs) {
         if (err) {
             console.log("Error al encontrar los amigos");
         } else {
-            console.log(docs);
-            console.log(userWebId);
-            return docs;
-        }
-    }))
-    console.log(userWebId);
-    var users = friends.map(function(elem) {
-        console.log(userWebId);
-        return (elem.target == userWebId)?elem.requester : elem.target;
-    }, this)
-    console.log("Amigos:"+ users)
-
-    await User.find({'webId' : { $in: users}}, function(err, docs){
-        if(err) {
-            console.log("Error al encontrar los usuarios dados los amigos")
-        } else {
-            res.send(docs);
+            var users = docs.map(function(elem) {
+                return (elem.target == userWebId)?elem.requester : elem.target;
+            }, this)
+            console.log(users)
+                    
+            Location.find({'user' : { $in: users}}, function(err, docs){
+                if(err) {
+                    console.log("Error al encontrar los usuarios dados los amigos")
+                } else {
+                    console.log(docs);
+                    res.send(docs);
+                }
+            })
         }
     })
+
+
 })
 
 module.exports = router
