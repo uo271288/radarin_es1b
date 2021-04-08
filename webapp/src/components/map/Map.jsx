@@ -2,6 +2,7 @@ import React, { useEffect, useContext } from 'react'
 import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from 'react-leaflet';
 import { LocationsContext } from '../../context/LocationsContext';
 import { addLocation, getFriendsLocations, getFriends } from '../../api/api';
+import FriendsLocationMarkers from './FriendsLocationMarkers';
 import Geocode from "react-geocode";
 
 Geocode.setApiKey("AIzaSyC6fKABMEcc3viILCEmzr9Uy7pToGhbVv0");
@@ -95,15 +96,7 @@ const Map = (props) => {
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
 
-                    {locations.locs && locations.locs.forEach(loc => {
-                        console.log(loc);
-                        <Marker position={[loc.altitud, loc.latitud]}>
-                            <Popup>
-                                A pretty CSS3 popup. <br /> Easily customizable.
-                    </Popup>
-                        </Marker>
-                    })}
-
+                    <FriendsLocationMarkers webId={props.webId}/>
                 </MapContainer>
             </div>
         </div>
