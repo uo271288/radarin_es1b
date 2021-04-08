@@ -32,7 +32,7 @@ export async function addLocation(webId,location,state,country){
     return await response.json()
 }
 
-export async function getFriendsLocations(){
+export async function getFriendsLocations(webId){
     console.log("Pidiendo localizacionies de los amigos...")
     const apiEndPoint= process.env.REACT_APP_API_URI || 'http://localhost:5000/api'
     let response = await fetch(apiEndPoint+'/friends/locations', {
