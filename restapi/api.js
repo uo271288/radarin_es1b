@@ -13,15 +13,15 @@ router.get("/users/list", async (req, res) => {
 //register a new user
 router.post("/users/add", async (req, res) => {
     let name = req.body.name;
-    let email = req.body.email;
+    let webID = req.body.webID;
     //Check if the device is already in the db
-    let user = await User.findOne({ email: email })
+    let user = await User.findOne({ webID: webID })
     if (user)
         res.send({ error: "Error: This user is already registered" })
     else {
         user = new User({
             name: name,
-            email: email,
+            webID: webID,
         })
         await user.save()
         res.send(user)
