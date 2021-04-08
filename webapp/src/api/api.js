@@ -49,3 +49,16 @@ export async function getFriends(webId){
     let response = await fetch(apiEndPoint+'/friends/list/'+webId+'?user='+webId)
     return await response.json()
 }
+
+export async function acceptedFriend(webId,friendWebId){
+    const apiEndPoint= process.env.REACT_APP_API_URI || 'http://localhost:5000/api'
+    let response = await fetch(apiEndPoint+'/friends/accept/', {
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({
+            'webID':webId, 
+            'friendWebId':friendWebId
+        })
+      })
+    return await response.json()
+}

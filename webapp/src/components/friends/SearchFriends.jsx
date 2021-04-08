@@ -3,15 +3,17 @@ import { Button } from '@material-ui/core';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Paper from "@material-ui/core/Paper";
-
+import { getUsers } from '../../api/api';
 import Image from '../profile/Image';
+import List from './list'
 class SearchFriends extends React.Component {
 
     constructor( webId) {
 		super();
 		this.webID = webId;
+        this.friends=getUsers();
 		this.state = {
-			friendName: ""
+			searchName: ""
 		};
 		this.handleChange = this.handleChange.bind(this);
 	}
@@ -50,49 +52,19 @@ class SearchFriends extends React.Component {
           */
     }
 
-    mostrarPersona(nombre, AjenawebId,webId,imageSrc){
-        return(
-            <Grid container
-            spacing={2}
-            direction="row"
-            justify="flex-start"
-            alignItems="center">
-            <Grid item xs={12} md={2}>
-            <Image name={nombre} src={imageSrc} />
-            </Grid>
-            <Grid item xs={12} md={10}>
-            <Paper elevation={1}>
-                <Typography variant="h4" component="h3">
-                Perfil de {nombre}
-                </Typography>
-                <Typography variant="caption">
-                Perfil de solid : {AjenawebId}
-                </Typography>
-                <Typography>
-                <Button id="addFriends" type="button" onClick={(e) => this.añadir(e)}>
-							Añadir
-						</Button>
-                </Typography>
-            </Paper>
-            </Grid>
-            </Grid>
-        );
-    }
+    
 
-    async añadir(e) {
-        //comprobación de que no es ya tu amigo
-            //amadir como amigo a loa base de datos
-    }
     getLista(){
-        //obtener la lista de todos las personas de la base de datos y que sea tipo 
-        //botón  para que cuando se pulse aparece lo de arriba
-        //Intentar reutilizar el codigo de friendlist
+        <List friends={this.friends} />
     }
 
     async handleClick(e) {
             e.preventDefault();
             if (this.state.friendName !== "") {
-                this.searchOneFriend(this.webID, this.state.friendName);            
+                this.searchOneFriend(this.webID, this.state.searchName);            
+            }
+            else{
+                this.friends=getUsers();
             }
     }
 
