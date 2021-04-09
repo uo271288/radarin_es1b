@@ -6,7 +6,7 @@ import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 import MapIcon from '@material-ui/icons/Map';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
-import Map from './map/Map';
+import Map from './Map/Map';
 import Friends from './friends/Friends';
 import Start from '../routes/StartPage';
 import Home from '@material-ui/icons/Home'
